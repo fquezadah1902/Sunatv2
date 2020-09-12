@@ -82,6 +82,12 @@ Partial Class Form1
         Me.IdUsuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.KryptonHeaderGroup1 = New ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup()
         Me.ButtonSpecHeaderGroup10 = New ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup()
+
+        Me.btnTeclado = New ComponentFactory.Krypton.Toolkit.KryptonButton()
+        Me.cmbDepartamento = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
+        Me.cmbProvincia = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
+        Me.cmbDistrito = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
+
         CType(Me.kryptonPanelMain, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.kryptonPanelMain.SuspendLayout()
         CType(Me.kryptonSplitContainerMain, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -107,6 +113,9 @@ Partial Class Form1
         CType(Me.KryptonHeaderGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KryptonHeaderGroup1.Panel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.KryptonHeaderGroup1.SuspendLayout()
+        CType(Me.cmbDepartamento, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbProvincia, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbDistrito, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'kryptonPanelMain
@@ -486,18 +495,67 @@ Partial Class Form1
         Me.KryptonHeaderGroup1.HeaderVisibleSecondary = False
         Me.KryptonHeaderGroup1.Location = New System.Drawing.Point(0, 0)
         Me.KryptonHeaderGroup1.Name = "KryptonHeaderGroup1"
+
+        'KryptonHeaderGroup1.Panel
+        '
+        Me.KryptonHeaderGroup1.Panel.Controls.Add(Me.cmbDistrito)
+        Me.KryptonHeaderGroup1.Panel.Controls.Add(Me.cmbProvincia)
+        Me.KryptonHeaderGroup1.Panel.Controls.Add(Me.cmbDepartamento)
+        Me.KryptonHeaderGroup1.Panel.Controls.Add(Me.btnTeclado)
+
         Me.KryptonHeaderGroup1.Size = New System.Drawing.Size(792, 442)
         Me.KryptonHeaderGroup1.StateNormal.HeaderPrimary.Content.Image.ImageH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far
         Me.KryptonHeaderGroup1.TabIndex = 1
         Me.KryptonHeaderGroup1.ValuesPrimary.Heading = "Consultas"
         Me.KryptonHeaderGroup1.ValuesPrimary.Image = Nothing
-        '
-        'ButtonSpecHeaderGroup10
-        '
+
         Me.ButtonSpecHeaderGroup10.UniqueName = "F7D03F7D2C87431846AF1A590A742936"
         '
-        'Form1
+
         '
+        Me.btnTeclado.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnTeclado.Location = New System.Drawing.Point(494, 26)
+        Me.btnTeclado.Name = "btnTeclado"
+        Me.btnTeclado.Size = New System.Drawing.Size(159, 42)
+        Me.btnTeclado.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
+        Me.btnTeclado.StateCommon.Content.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far
+        Me.btnTeclado.TabIndex = 96
+        Me.btnTeclado.Values.Text = ""
+        '
+        'cmbDepartamento
+        '
+        Me.cmbDepartamento.DisplayMember = "Nom_Departamento"
+        Me.cmbDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbDepartamento.DropDownWidth = 121
+        Me.cmbDepartamento.Location = New System.Drawing.Point(70, 56)
+        Me.cmbDepartamento.Name = "cmbDepartamento"
+        Me.cmbDepartamento.Size = New System.Drawing.Size(121, 21)
+        Me.cmbDepartamento.TabIndex = 97
+        Me.cmbDepartamento.ValueMember = "IdDepartamento"
+        '
+        'cmbProvincia
+        '
+        Me.cmbProvincia.DisplayMember = "Nom_Provincia"
+        Me.cmbProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbProvincia.DropDownWidth = 121
+        Me.cmbProvincia.Location = New System.Drawing.Point(70, 101)
+        Me.cmbProvincia.Name = "cmbProvincia"
+        Me.cmbProvincia.Size = New System.Drawing.Size(121, 21)
+        Me.cmbProvincia.TabIndex = 98
+        Me.cmbProvincia.ValueMember = "IdProvincia"
+        '
+        'cmbDistrito
+        '
+        Me.cmbDistrito.DisplayMember = "Nom_Distrito"
+        Me.cmbDistrito.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbDistrito.DropDownWidth = 121
+        Me.cmbDistrito.Location = New System.Drawing.Point(70, 140)
+        Me.cmbDistrito.Name = "cmbDistrito"
+        Me.cmbDistrito.Size = New System.Drawing.Size(121, 21)
+        Me.cmbDistrito.TabIndex = 99
+        Me.cmbDistrito.ValueMember = "IdDistrito"
+        '
+
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
@@ -529,6 +587,9 @@ Partial Class Form1
         CType(Me.KryptonHeaderGroup1.Panel, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KryptonHeaderGroup1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.KryptonHeaderGroup1.ResumeLayout(False)
+        CType(Me.cmbDepartamento, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cmbProvincia, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cmbDistrito, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -569,4 +630,10 @@ Partial Class Form1
     Friend WithEvents IdUsuario As DataGridViewTextBoxColumn
     Private WithEvents KryptonHeaderGroup1 As ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup
     Friend WithEvents ButtonSpecHeaderGroup10 As ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup
+
+    Friend WithEvents btnTeclado As ComponentFactory.Krypton.Toolkit.KryptonButton
+    Friend WithEvents cmbDistrito As ComponentFactory.Krypton.Toolkit.KryptonComboBox
+    Friend WithEvents cmbProvincia As ComponentFactory.Krypton.Toolkit.KryptonComboBox
+    Friend WithEvents cmbDepartamento As ComponentFactory.Krypton.Toolkit.KryptonComboBox
+
 End Class

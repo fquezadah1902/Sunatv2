@@ -113,12 +113,6 @@
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmConsulta.Designer.vb">
-      <DependentUpon>FrmConsulta.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmConsulta.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -170,6 +164,16 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sunatv2.BL\Sunatv2.BL.vbproj">
+      <Project>{d7fc5f94-09e9-4165-bbc9-22120268d7d9}</Project>
+      <Name>Sunatv2.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sunatv2.Common\Sunatv2.Common.csproj">
+      <Project>{a58ea8f1-f782-4853-8402-e69ea4e588f5}</Project>
+      <Name>Sunatv2.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
