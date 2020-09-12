@@ -24,28 +24,28 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle45 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle46 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle47 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle48 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle49 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle50 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle51 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle52 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle53 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle54 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle55 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle56 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle57 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle58 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle59 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle60 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle61 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle62 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle63 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle64 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle65 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle66 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.kryptonPanelMain = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
         Me.kryptonSplitContainerMain = New ComponentFactory.Krypton.Toolkit.KryptonSplitContainer()
         Me.KryptonHeaderGroup7 = New ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup()
@@ -82,12 +82,11 @@ Partial Class Form1
         Me.IdUsuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.KryptonHeaderGroup1 = New ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup()
         Me.ButtonSpecHeaderGroup10 = New ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup()
-
-        Me.btnTeclado = New ComponentFactory.Krypton.Toolkit.KryptonButton()
-        Me.cmbDepartamento = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
-        Me.cmbProvincia = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
         Me.cmbDistrito = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
-
+        Me.cmbProvincia = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
+        Me.cmbDepartamento = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
+        Me.btnTeclado = New ComponentFactory.Krypton.Toolkit.KryptonButton()
+        Me.KryptonButton1 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         CType(Me.kryptonPanelMain, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.kryptonPanelMain.SuspendLayout()
         CType(Me.kryptonSplitContainerMain, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,10 +111,11 @@ Partial Class Form1
         CType(Me.DgTraPendPPTO, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KryptonHeaderGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KryptonHeaderGroup1.Panel, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.KryptonHeaderGroup1.Panel.SuspendLayout()
         Me.KryptonHeaderGroup1.SuspendLayout()
-        CType(Me.cmbDepartamento, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.cmbProvincia, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cmbDistrito, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbProvincia, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbDepartamento, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'kryptonPanelMain
@@ -218,8 +218,8 @@ Partial Class Form1
         Me.DgTraPendPPTO.AllowUserToAddRows = False
         Me.DgTraPendPPTO.AllowUserToDeleteRows = False
         Me.DgTraPendPPTO.AllowUserToResizeRows = False
-        DataGridViewCellStyle45.BackColor = System.Drawing.Color.Lavender
-        Me.DgTraPendPPTO.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle45
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.Lavender
+        Me.DgTraPendPPTO.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DgTraPendPPTO.ColumnHeadersHeight = 25
         Me.DgTraPendPPTO.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.App, Me.Column3, Me.Column1, Me.IdTramite, Me.Paciente, Me.IdTipoServicio, Me.DescripcionServicio, Me.IdAutorizacion, Me.DescripcionAutorizacion, Me.IdTipo, Me.Tipo, Me.IdTipoSeguro, Me.Seguro, Me.Dias, Me.FechaAsignacion, Me.NombreUser, Me.ComentarioPresup, Me.ComentarioAutoriz1, Me.Cotizacion, Me.TelefonoUno, Me.TelefonoDos, Me.EMail, Me.CPM, Me.IdUsuario})
         Me.DgTraPendPPTO.Dock = System.Windows.Forms.DockStyle.Fill
@@ -242,9 +242,9 @@ Partial Class Form1
         '
         'App
         '
-        DataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle46.NullValue = False
-        Me.App.DefaultCellStyle = DataGridViewCellStyle46
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.NullValue = False
+        Me.App.DefaultCellStyle = DataGridViewCellStyle2
         Me.App.FalseValue = Nothing
         Me.App.IndeterminateValue = Nothing
         Me.App.Name = "App"
@@ -269,8 +269,8 @@ Partial Class Form1
         'IdTramite
         '
         Me.IdTramite.DataPropertyName = "IdTramite"
-        DataGridViewCellStyle47.Font = New System.Drawing.Font("Calibri", 8.25!)
-        Me.IdTramite.DefaultCellStyle = DataGridViewCellStyle47
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Calibri", 8.25!)
+        Me.IdTramite.DefaultCellStyle = DataGridViewCellStyle3
         Me.IdTramite.HeaderText = "N° Tramite"
         Me.IdTramite.Name = "IdTramite"
         Me.IdTramite.ReadOnly = True
@@ -280,8 +280,8 @@ Partial Class Form1
         'Paciente
         '
         Me.Paciente.DataPropertyName = "Paciente"
-        DataGridViewCellStyle48.Font = New System.Drawing.Font("Calibri", 8.25!)
-        Me.Paciente.DefaultCellStyle = DataGridViewCellStyle48
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Calibri", 8.25!)
+        Me.Paciente.DefaultCellStyle = DataGridViewCellStyle4
         Me.Paciente.HeaderText = "Paciente"
         Me.Paciente.Name = "Paciente"
         Me.Paciente.ReadOnly = True
@@ -291,8 +291,8 @@ Partial Class Form1
         'IdTipoServicio
         '
         Me.IdTipoServicio.DataPropertyName = "IdTipoServicio"
-        DataGridViewCellStyle49.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IdTipoServicio.DefaultCellStyle = DataGridViewCellStyle49
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IdTipoServicio.DefaultCellStyle = DataGridViewCellStyle5
         Me.IdTipoServicio.HeaderText = "IdTipoServicio"
         Me.IdTipoServicio.Name = "IdTipoServicio"
         Me.IdTipoServicio.ReadOnly = True
@@ -301,8 +301,8 @@ Partial Class Form1
         'DescripcionServicio
         '
         Me.DescripcionServicio.DataPropertyName = "DescripcionServicio"
-        DataGridViewCellStyle50.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DescripcionServicio.DefaultCellStyle = DataGridViewCellStyle50
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DescripcionServicio.DefaultCellStyle = DataGridViewCellStyle6
         Me.DescripcionServicio.HeaderText = "Servicio"
         Me.DescripcionServicio.Name = "DescripcionServicio"
         Me.DescripcionServicio.ReadOnly = True
@@ -310,8 +310,8 @@ Partial Class Form1
         'IdAutorizacion
         '
         Me.IdAutorizacion.DataPropertyName = "IdAutorizacion"
-        DataGridViewCellStyle51.Font = New System.Drawing.Font("Calibri", 8.25!)
-        Me.IdAutorizacion.DefaultCellStyle = DataGridViewCellStyle51
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Calibri", 8.25!)
+        Me.IdAutorizacion.DefaultCellStyle = DataGridViewCellStyle7
         Me.IdAutorizacion.HeaderText = "IdAutorizacion"
         Me.IdAutorizacion.Name = "IdAutorizacion"
         Me.IdAutorizacion.ReadOnly = True
@@ -320,8 +320,8 @@ Partial Class Form1
         'DescripcionAutorizacion
         '
         Me.DescripcionAutorizacion.DataPropertyName = "DescripcionAutorizacion"
-        DataGridViewCellStyle52.Font = New System.Drawing.Font("Calibri", 8.25!)
-        Me.DescripcionAutorizacion.DefaultCellStyle = DataGridViewCellStyle52
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Calibri", 8.25!)
+        Me.DescripcionAutorizacion.DefaultCellStyle = DataGridViewCellStyle8
         Me.DescripcionAutorizacion.HeaderText = "Autorizacion"
         Me.DescripcionAutorizacion.Name = "DescripcionAutorizacion"
         Me.DescripcionAutorizacion.ReadOnly = True
@@ -329,8 +329,8 @@ Partial Class Form1
         'IdTipo
         '
         Me.IdTipo.DataPropertyName = "IdTipo"
-        DataGridViewCellStyle53.Font = New System.Drawing.Font("Calibri", 8.25!)
-        Me.IdTipo.DefaultCellStyle = DataGridViewCellStyle53
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Calibri", 8.25!)
+        Me.IdTipo.DefaultCellStyle = DataGridViewCellStyle9
         Me.IdTipo.HeaderText = "IdTipo"
         Me.IdTipo.Name = "IdTipo"
         Me.IdTipo.ReadOnly = True
@@ -340,8 +340,8 @@ Partial Class Form1
         'Tipo
         '
         Me.Tipo.DataPropertyName = "Tipo"
-        DataGridViewCellStyle54.Font = New System.Drawing.Font("Calibri", 8.25!)
-        Me.Tipo.DefaultCellStyle = DataGridViewCellStyle54
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Calibri", 8.25!)
+        Me.Tipo.DefaultCellStyle = DataGridViewCellStyle10
         Me.Tipo.HeaderText = "Tipo"
         Me.Tipo.Name = "Tipo"
         Me.Tipo.ReadOnly = True
@@ -351,8 +351,8 @@ Partial Class Form1
         'IdTipoSeguro
         '
         Me.IdTipoSeguro.DataPropertyName = "IdTipoSeguro"
-        DataGridViewCellStyle55.Font = New System.Drawing.Font("Calibri", 8.25!)
-        Me.IdTipoSeguro.DefaultCellStyle = DataGridViewCellStyle55
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Calibri", 8.25!)
+        Me.IdTipoSeguro.DefaultCellStyle = DataGridViewCellStyle11
         Me.IdTipoSeguro.HeaderText = "IdTipoSeguro"
         Me.IdTipoSeguro.Name = "IdTipoSeguro"
         Me.IdTipoSeguro.ReadOnly = True
@@ -362,8 +362,8 @@ Partial Class Form1
         'Seguro
         '
         Me.Seguro.DataPropertyName = "Seguro"
-        DataGridViewCellStyle56.Font = New System.Drawing.Font("Calibri", 8.25!)
-        Me.Seguro.DefaultCellStyle = DataGridViewCellStyle56
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Calibri", 8.25!)
+        Me.Seguro.DefaultCellStyle = DataGridViewCellStyle12
         Me.Seguro.HeaderText = "Seguro"
         Me.Seguro.Name = "Seguro"
         Me.Seguro.ReadOnly = True
@@ -373,8 +373,8 @@ Partial Class Form1
         'Dias
         '
         Me.Dias.DataPropertyName = "Dias"
-        DataGridViewCellStyle57.Font = New System.Drawing.Font("Calibri", 8.25!)
-        Me.Dias.DefaultCellStyle = DataGridViewCellStyle57
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Calibri", 8.25!)
+        Me.Dias.DefaultCellStyle = DataGridViewCellStyle13
         Me.Dias.HeaderText = "Dias"
         Me.Dias.Name = "Dias"
         Me.Dias.ReadOnly = True
@@ -384,8 +384,8 @@ Partial Class Form1
         'FechaAsignacion
         '
         Me.FechaAsignacion.DataPropertyName = "FechaAsignacion"
-        DataGridViewCellStyle58.Font = New System.Drawing.Font("Calibri", 8.25!)
-        Me.FechaAsignacion.DefaultCellStyle = DataGridViewCellStyle58
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Calibri", 8.25!)
+        Me.FechaAsignacion.DefaultCellStyle = DataGridViewCellStyle14
         Me.FechaAsignacion.HeaderText = "F. H. Asignacion"
         Me.FechaAsignacion.Name = "FechaAsignacion"
         Me.FechaAsignacion.ReadOnly = True
@@ -395,8 +395,8 @@ Partial Class Form1
         'NombreUser
         '
         Me.NombreUser.DataPropertyName = "NombreUser"
-        DataGridViewCellStyle59.Font = New System.Drawing.Font("Calibri", 8.25!)
-        Me.NombreUser.DefaultCellStyle = DataGridViewCellStyle59
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Calibri", 8.25!)
+        Me.NombreUser.DefaultCellStyle = DataGridViewCellStyle15
         Me.NombreUser.HeaderText = "NombreUser"
         Me.NombreUser.Name = "NombreUser"
         Me.NombreUser.ReadOnly = True
@@ -405,8 +405,8 @@ Partial Class Form1
         'ComentarioPresup
         '
         Me.ComentarioPresup.DataPropertyName = "ComentarioPresup"
-        DataGridViewCellStyle60.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComentarioPresup.DefaultCellStyle = DataGridViewCellStyle60
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComentarioPresup.DefaultCellStyle = DataGridViewCellStyle16
         Me.ComentarioPresup.HeaderText = "Observaciones PPto"
         Me.ComentarioPresup.Name = "ComentarioPresup"
         Me.ComentarioPresup.ReadOnly = True
@@ -426,8 +426,8 @@ Partial Class Form1
         'Cotizacion
         '
         Me.Cotizacion.DataPropertyName = "Cotizacion"
-        DataGridViewCellStyle61.Font = New System.Drawing.Font("Calibri", 8.25!)
-        Me.Cotizacion.DefaultCellStyle = DataGridViewCellStyle61
+        DataGridViewCellStyle17.Font = New System.Drawing.Font("Calibri", 8.25!)
+        Me.Cotizacion.DefaultCellStyle = DataGridViewCellStyle17
         Me.Cotizacion.HeaderText = "Hospitalizacion"
         Me.Cotizacion.Name = "Cotizacion"
         Me.Cotizacion.ReadOnly = True
@@ -437,8 +437,8 @@ Partial Class Form1
         'TelefonoUno
         '
         Me.TelefonoUno.DataPropertyName = "TelefonoUno"
-        DataGridViewCellStyle62.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TelefonoUno.DefaultCellStyle = DataGridViewCellStyle62
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TelefonoUno.DefaultCellStyle = DataGridViewCellStyle18
         Me.TelefonoUno.HeaderText = "Telefono 1"
         Me.TelefonoUno.Name = "TelefonoUno"
         Me.TelefonoUno.ReadOnly = True
@@ -448,8 +448,8 @@ Partial Class Form1
         'TelefonoDos
         '
         Me.TelefonoDos.DataPropertyName = "TelefonoDos"
-        DataGridViewCellStyle63.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TelefonoDos.DefaultCellStyle = DataGridViewCellStyle63
+        DataGridViewCellStyle19.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TelefonoDos.DefaultCellStyle = DataGridViewCellStyle19
         Me.TelefonoDos.HeaderText = "Telefono 2"
         Me.TelefonoDos.Name = "TelefonoDos"
         Me.TelefonoDos.ReadOnly = True
@@ -459,8 +459,8 @@ Partial Class Form1
         'EMail
         '
         Me.EMail.DataPropertyName = "EMail"
-        DataGridViewCellStyle64.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EMail.DefaultCellStyle = DataGridViewCellStyle64
+        DataGridViewCellStyle20.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EMail.DefaultCellStyle = DataGridViewCellStyle20
         Me.EMail.HeaderText = "EM@il"
         Me.EMail.Name = "EMail"
         Me.EMail.ReadOnly = True
@@ -469,8 +469,8 @@ Partial Class Form1
         'CPM
         '
         Me.CPM.DataPropertyName = "CPM"
-        DataGridViewCellStyle65.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CPM.DefaultCellStyle = DataGridViewCellStyle65
+        DataGridViewCellStyle21.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CPM.DefaultCellStyle = DataGridViewCellStyle21
         Me.CPM.HeaderText = "CPM"
         Me.CPM.Name = "CPM"
         Me.CPM.ReadOnly = True
@@ -480,8 +480,8 @@ Partial Class Form1
         'IdUsuario
         '
         Me.IdUsuario.DataPropertyName = "IdUsuario"
-        DataGridViewCellStyle66.Font = New System.Drawing.Font("Calibri", 8.25!)
-        Me.IdUsuario.DefaultCellStyle = DataGridViewCellStyle66
+        DataGridViewCellStyle22.Font = New System.Drawing.Font("Calibri", 8.25!)
+        Me.IdUsuario.DefaultCellStyle = DataGridViewCellStyle22
         Me.IdUsuario.HeaderText = "IdUsuario"
         Me.IdUsuario.Name = "IdUsuario"
         Me.IdUsuario.ReadOnly = True
@@ -495,32 +495,45 @@ Partial Class Form1
         Me.KryptonHeaderGroup1.HeaderVisibleSecondary = False
         Me.KryptonHeaderGroup1.Location = New System.Drawing.Point(0, 0)
         Me.KryptonHeaderGroup1.Name = "KryptonHeaderGroup1"
-
+        '
         'KryptonHeaderGroup1.Panel
         '
+        Me.KryptonHeaderGroup1.Panel.Controls.Add(Me.KryptonButton1)
         Me.KryptonHeaderGroup1.Panel.Controls.Add(Me.cmbDistrito)
         Me.KryptonHeaderGroup1.Panel.Controls.Add(Me.cmbProvincia)
         Me.KryptonHeaderGroup1.Panel.Controls.Add(Me.cmbDepartamento)
         Me.KryptonHeaderGroup1.Panel.Controls.Add(Me.btnTeclado)
-
         Me.KryptonHeaderGroup1.Size = New System.Drawing.Size(792, 442)
         Me.KryptonHeaderGroup1.StateNormal.HeaderPrimary.Content.Image.ImageH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far
         Me.KryptonHeaderGroup1.TabIndex = 1
         Me.KryptonHeaderGroup1.ValuesPrimary.Heading = "Consultas"
         Me.KryptonHeaderGroup1.ValuesPrimary.Image = Nothing
-
+        '
+        'ButtonSpecHeaderGroup10
+        '
         Me.ButtonSpecHeaderGroup10.UniqueName = "F7D03F7D2C87431846AF1A590A742936"
         '
-
+        'cmbDistrito
         '
-        Me.btnTeclado.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnTeclado.Location = New System.Drawing.Point(494, 26)
-        Me.btnTeclado.Name = "btnTeclado"
-        Me.btnTeclado.Size = New System.Drawing.Size(159, 42)
-        Me.btnTeclado.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
-        Me.btnTeclado.StateCommon.Content.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far
-        Me.btnTeclado.TabIndex = 96
-        Me.btnTeclado.Values.Text = ""
+        Me.cmbDistrito.DisplayMember = "Nom_Distrito"
+        Me.cmbDistrito.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbDistrito.DropDownWidth = 121
+        Me.cmbDistrito.Location = New System.Drawing.Point(380, 56)
+        Me.cmbDistrito.Name = "cmbDistrito"
+        Me.cmbDistrito.Size = New System.Drawing.Size(121, 21)
+        Me.cmbDistrito.TabIndex = 99
+        Me.cmbDistrito.ValueMember = "IdDistrito"
+        '
+        'cmbProvincia
+        '
+        Me.cmbProvincia.DisplayMember = "Nom_Provincia"
+        Me.cmbProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbProvincia.DropDownWidth = 121
+        Me.cmbProvincia.Location = New System.Drawing.Point(219, 56)
+        Me.cmbProvincia.Name = "cmbProvincia"
+        Me.cmbProvincia.Size = New System.Drawing.Size(121, 21)
+        Me.cmbProvincia.TabIndex = 98
+        Me.cmbProvincia.ValueMember = "IdProvincia"
         '
         'cmbDepartamento
         '
@@ -533,29 +546,27 @@ Partial Class Form1
         Me.cmbDepartamento.TabIndex = 97
         Me.cmbDepartamento.ValueMember = "IdDepartamento"
         '
-        'cmbProvincia
+        'btnTeclado
         '
-        Me.cmbProvincia.DisplayMember = "Nom_Provincia"
-        Me.cmbProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbProvincia.DropDownWidth = 121
-        Me.cmbProvincia.Location = New System.Drawing.Point(70, 101)
-        Me.cmbProvincia.Name = "cmbProvincia"
-        Me.cmbProvincia.Size = New System.Drawing.Size(121, 21)
-        Me.cmbProvincia.TabIndex = 98
-        Me.cmbProvincia.ValueMember = "IdProvincia"
+        Me.btnTeclado.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnTeclado.Location = New System.Drawing.Point(1136, 26)
+        Me.btnTeclado.Name = "btnTeclado"
+        Me.btnTeclado.Size = New System.Drawing.Size(159, 42)
+        Me.btnTeclado.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
+        Me.btnTeclado.StateCommon.Content.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far
+        Me.btnTeclado.TabIndex = 96
+        Me.btnTeclado.Values.Text = ""
         '
-        'cmbDistrito
+        'KryptonButton1
         '
-        Me.cmbDistrito.DisplayMember = "Nom_Distrito"
-        Me.cmbDistrito.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbDistrito.DropDownWidth = 121
-        Me.cmbDistrito.Location = New System.Drawing.Point(70, 140)
-        Me.cmbDistrito.Name = "cmbDistrito"
-        Me.cmbDistrito.Size = New System.Drawing.Size(121, 21)
-        Me.cmbDistrito.TabIndex = 99
-        Me.cmbDistrito.ValueMember = "IdDistrito"
+        Me.KryptonButton1.Location = New System.Drawing.Point(555, 51)
+        Me.KryptonButton1.Name = "KryptonButton1"
+        Me.KryptonButton1.Size = New System.Drawing.Size(111, 25)
+        Me.KryptonButton1.TabIndex = 100
+        Me.KryptonButton1.Values.Text = "&Consultar"
         '
-
+        'Form1
+        '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
@@ -585,11 +596,12 @@ Partial Class Form1
         Me.kryptonHeaderGroupDetails.ResumeLayout(False)
         CType(Me.DgTraPendPPTO, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KryptonHeaderGroup1.Panel, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.KryptonHeaderGroup1.Panel.ResumeLayout(False)
         CType(Me.KryptonHeaderGroup1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.KryptonHeaderGroup1.ResumeLayout(False)
-        CType(Me.cmbDepartamento, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.cmbProvincia, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.cmbDistrito, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cmbProvincia, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cmbDepartamento, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -635,5 +647,5 @@ Partial Class Form1
     Friend WithEvents cmbDistrito As ComponentFactory.Krypton.Toolkit.KryptonComboBox
     Friend WithEvents cmbProvincia As ComponentFactory.Krypton.Toolkit.KryptonComboBox
     Friend WithEvents cmbDepartamento As ComponentFactory.Krypton.Toolkit.KryptonComboBox
-
+    Friend WithEvents KryptonButton1 As ComponentFactory.Krypton.Toolkit.KryptonButton
 End Class
