@@ -1,19 +1,15 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data
+Public Class PadronSunatDA
 
 
-
-
-Public Class DistritoDA
-
-    Public Function Get_Distrito_SelectAll(ByVal IdDepartamento As Integer, ByVal IdProvincia As Integer) As DataTable
+    Public Function Get_PadronSunat_SelectAll(ByVal Cadena As String) As DataTable
         Using cn As New SqlConnection(strConexion)
             Dim cmd As New SqlCommand()
             cmd.Connection = cn
-            cmd.CommandText = "SP_Distrito_SEL01"
+            cmd.CommandText = "SP_PadronSunat_SEL01"
             cmd.CommandType = CommandType.StoredProcedure
-            cmd.Parameters.Add("@IdDepartamento", SqlDbType.NVarChar).Value = IdDepartamento
-            cmd.Parameters.Add("@IdProvincia", SqlDbType.NVarChar).Value = IdProvincia
+            cmd.Parameters.Add("@Cadena", SqlDbType.NVarChar).Value = Cadena
 
             Dim da = New SqlDataAdapter()
             Dim dt As New DataTable()
@@ -23,4 +19,6 @@ Public Class DistritoDA
             Return dt
         End Using
     End Function
+
+
 End Class

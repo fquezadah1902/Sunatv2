@@ -1,39 +1,65 @@
 ﻿Imports ComponentFactory.Krypton
+Imports Sunatv2.BL
 
 Public Class ControlConsultasSunat
 
-    'Dim Clientes As New ClientesBL
+    Dim Departamento As New DepartamentoBL
+    Dim Provincia As New ProvinciaBL
+    Dim Distrito As New DistritoBL
+    Dim PadronSunat As New PadronSunatBL
 
     Private Sub ControlClienteProveedor_Load(sender As Object, e As EventArgs) Handles Me.Load
         Me.kryptonSplitContainerMain.Panel1Collapsed = True
-        Cargar()
+        cmbDepartamento.DataSource = Departamento.Get_Departamento_SelectAll()
     End Sub
+
     Sub Cargar()
 
         Dim Cadena = ""
-
         If ChkNumDocuCliente.Checked = True Then
-            If Me.txtNumDocCliente.Text <> "" Then
-                Cadena = Cadena & " AND c.NumDocumento LIKE '%" & Me.txtNumDocCliente.Text.Trim & "%'"
+            If Me.txtNumeroRuc.Text <> "" Then
+                Cadena = Cadena & " AND s.RUC = '" & Me.txtNumeroRuc.Text.Trim & "'"
+            End If
+        End If
+        If Me.chkFechaRegistro.Checked = True Then
+            If Me.dtFRegistroIni.Value.Date > Me.dtFRegistroFin.Value.Date Then
+                Toolkit.KryptonMessageBox.Show("Fechas seleccionadas no son validas", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Exit Sub
+            End If
+            Cadena = Cadena & " AND CAST(s.FechaRegistroSistema AS DATE) BETWEEN '" & Format(Convert.ToDateTime(Me.dtFRegistroIni.Text), "dd/MM/yyyy") & "' AND '" & Format(Convert.ToDateTime(Me.dtFRegistroFin.Text), "dd/MM/yyyy") & " '"
+        End If
+
+        If chkDepartamento.Checked = True Then
+            If cmbDepartamento.SelectedIndex > -1 Then
+                Cadena = Cadena & " AND s.IdDepartamento = " & cmbDepartamento.SelectedValue.ToString()
             End If
         End If
 
-        If chkNomCliente.Checked = True Then
-            If Me.txtNomCliente.Text <> "" Then
-                Cadena = Cadena & " AND c.Nom_Entidad LIKE '%" & Me.txtNomCliente.Text.Trim & "%'"
+        If chkProvincia.Checked = True Then
+            If cmbProvincia.SelectedIndex > -1 Then
+                Cadena = Cadena & " AND s.IdProvincia = " & cmbProvincia.SelectedValue.ToString()
             End If
         End If
 
-        'DgClientes.DataSource = Clientes.GetLista_Clientes(Cadena)
-    End Sub
 
-    Private Sub NuevoToolStripButton_Click(sender As Object, e As EventArgs) Handles NuevoToolStripButton.Click
-        'Dim IdCliente As Integer = 0
 
-        'Dim frm As New FrmPopClienteProveedor(IdCliente)
-        'frm.ShowDialog()
-        'frm.Dispose()
-        'Cargar()
+        If chkDistrito.Checked = True Then
+            If cmbDistrito.SelectedIndex > -1 Then
+                Cadena = Cadena & " AND s.IdDistrito = " & cmbDistrito.SelectedValue.ToString()
+            End If
+        End If
+
+
+        'If chkDepartamento.Checked = True Then
+        '    If Me.txtNomCliente.Text <> "" Then
+        '        Cadena = Cadena & " AND c.Nom_Entidad LIKE '%" & Me.txtNomCliente.Text.Trim & "%'"
+        '    End If
+        'End If
+        DgAfiliadosSunat.DataSource = PadronSunat.Get_Padron_SelectAll(Cadena)
+
+        Me.kryptonSplitContainerMain.Panel1Collapsed = True
+        KryptonHeaderGroup1.ValuesPrimary.Heading = "Ubicado Sunat: " & DgAfiliadosSunat.Rows.Count
+
     End Sub
 
     Private Sub FiltrarToolStripButton_Click(sender As Object, e As EventArgs) Handles FiltrarToolStripButton.Click
@@ -42,36 +68,6 @@ Public Class ControlConsultasSunat
         Else
             Me.kryptonSplitContainerMain.Panel1Collapsed = True
         End If
-    End Sub
-
-    Private Sub NuevoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NuevoToolStripMenuItem.Click
-        ''   FrmPopClienteProveedor.Show()
-
-        'Dim IdCliente As Integer = 0
-
-        'Dim frm As New FrmPopClienteProveedor(IdCliente)
-        'frm.ShowDialog()
-        'frm.Dispose()
-        'Cargar()
-
-    End Sub
-
-    Private Sub ModificarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ModificarToolStripMenuItem.Click
-
-        If Me.DgClientes.SelectedRows.Count = 0 Then
-            Toolkit.KryptonMessageBox.Show("Debe seleccionar un detalle primero para adicionar", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Exit Sub
-        End If
-        Evento_Modificar()
-    End Sub
-    Sub Evento_Modificar()
-        'Dim pos = DgClientes.CurrentRow.Index
-        'Dim IdCliente As Integer = DgClientes.Rows(pos).Cells("IdCliente").Value
-
-        'Dim frm As New FrmPopClienteProveedor(IdCliente)
-        'frm.ShowDialog()
-        'frm.Dispose()
-        'Cargar()
     End Sub
 
     Private Sub BtnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
@@ -83,13 +79,30 @@ Public Class ControlConsultasSunat
     End Sub
 
     Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ToolStripButton2.Click
-
-
         Dim control As New ControlFondo
         MDI.MostrarMantenerModulo(control)
     End Sub
 
-    Private Sub ExportarToolStripButton_Click(sender As Object, e As EventArgs) Handles ExportarToolStripButton.Click
-
+    Private Sub cmbDepartamento_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbDepartamento.SelectedIndexChanged
+        If cmbDepartamento.SelectedIndex > -1 Then
+            Dim IdDepartameto As Integer
+            IdDepartameto = cmbDepartamento.SelectedValue
+            cmbProvincia.DataSource = Provincia.Get_Provincia_SelectAll(IdDepartameto)
+        Else
+        End If
     End Sub
+
+    Private Sub cmbProvincia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbProvincia.SelectedIndexChanged
+        If cmbProvincia.SelectedIndex > -1 Then
+            Dim IdDepartamento As Integer
+            Dim IdProvincia As Integer
+            IdDepartamento = Me.cmbDepartamento.SelectedValue
+            IdProvincia = Me.cmbProvincia.SelectedValue
+
+            cmbDistrito.DataSource = Distrito.Get_Distrito_SelectAll(IdDepartamento, IdProvincia)
+        Else
+
+        End If
+    End Sub
+
 End Class

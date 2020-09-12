@@ -255,6 +255,7 @@ Public Class MDI
     End Sub
 
     Private Sub KryptonRibbonGroupButton16_Click(sender As Object, e As EventArgs) Handles KryptonRibbonGroupButton16.Click
-
+        Dim control As New ControlConsultasSunat
+        MostrarMantenerModulo(control)
     End Sub
 End Class

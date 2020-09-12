@@ -205,5 +205,38 @@
   <ItemGroup>
     <Folder Include="Seguridad\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FechaDerecha_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flechaderecha_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuscarLupa_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Word_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Embudo_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlechaActualiza_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\controlar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\servidor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuscarLupa_161.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

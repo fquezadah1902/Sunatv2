@@ -46,7 +46,6 @@ Partial Class ControlConsultasSunat
         Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlConsultasSunat))
         Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -61,19 +60,21 @@ Partial Class ControlConsultasSunat
         Dim DataGridViewCellStyle35 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle36 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle37 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle38 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle39 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle40 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle41 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle42 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.kryptonPanelMain = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
         Me.kryptonSplitContainerMain = New ComponentFactory.Krypton.Toolkit.KryptonSplitContainer()
         Me.kryptonHeaderGroupNavigation = New ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup()
-        Me.chkNomCliente = New ComponentFactory.Krypton.Toolkit.KryptonCheckBox()
-        Me.txtNomCliente = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
+        Me.chkFechaRegistro = New ComponentFactory.Krypton.Toolkit.KryptonCheckBox()
+        Me.dtFRegistroFin = New ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker()
+        Me.dtFRegistroIni = New ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker()
+        Me.txtNumeroRuc = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
+        Me.chkDistrito = New ComponentFactory.Krypton.Toolkit.KryptonCheckBox()
+        Me.chkProvincia = New ComponentFactory.Krypton.Toolkit.KryptonCheckBox()
+        Me.cmbDistrito = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
+        Me.cmbProvincia = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
+        Me.cmbDepartamento = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
+        Me.chkDepartamento = New ComponentFactory.Krypton.Toolkit.KryptonCheckBox()
         Me.ChkNumDocuCliente = New ComponentFactory.Krypton.Toolkit.KryptonCheckBox()
         Me.BtnBuscar = New ComponentFactory.Krypton.Toolkit.KryptonButton()
-        Me.txtNumDocCliente = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.kryptonSplitContainerDetails = New ComponentFactory.Krypton.Toolkit.KryptonSplitContainer()
         Me.kryptonHeaderGroupDetails = New ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup()
         Me.ButtonSpecHeaderGroup4 = New ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup()
@@ -106,48 +107,49 @@ Partial Class ControlConsultasSunat
         Me.CPM = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IdUsuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.KryptonHeaderGroup1 = New ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup()
-        Me.DgClientes = New ComponentFactory.Krypton.Toolkit.KryptonDataGridView()
+        Me.DgAfiliadosSunat = New ComponentFactory.Krypton.Toolkit.KryptonDataGridView()
         Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.NuevoToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.ActualizarToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.GuardarToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.toolStripSeparator = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripButtonBuscar = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.chkFechaActualizacion = New ComponentFactory.Krypton.Toolkit.KryptonCheckBox()
+        Me.KryptonDateTimePicker1 = New ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker()
+        Me.KryptonDateTimePicker2 = New ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.MostrarColumnasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.KryptonContextMenu1 = New ComponentFactory.Krypton.Toolkit.KryptonContextMenu()
+        Me.KryptonContextMenuCheckBox1 = New ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox()
+        Me.KryptonContextMenuCheckBox2 = New ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox()
+        Me.KryptonContextMenuCheckBox3 = New ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox()
+        Me.KryptonContextMenuCheckBox4 = New ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox()
+        Me.KryptonContextMenuCheckBox5 = New ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox()
+        Me.KryptonCheckBox1 = New ComponentFactory.Krypton.Toolkit.KryptonCheckBox()
+        Me.cmbEstadoContribuyente = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
+        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ActualizarToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.FiltrarToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.ExportarToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.BuscarToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.ImprimirToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.CancelarToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.toolStripReadingPane = New System.Windows.Forms.ToolStripButton()
-        Me.toolStripPosition = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.Column2 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.IdCliente = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Codigo_Cliente = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nom_Entidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Cliente = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nom_TipoDocumento = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NumDocumento = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nom_Departamento = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nom_Provincia = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nom_Distrito = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaRegistro = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.U_Registro = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaModificacion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.U_Modificacion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nom_Estado = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Clie = New ComponentFactory.Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn()
-        Me.Prov = New ComponentFactory.Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn()
-        Me.IdEstado = New ComponentFactory.Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn()
-        Me.IdTipoDocumento = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.IdPadron = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RUC = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RazonSocial = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DireccionFiscal = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EstadoContribuyente = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaIncripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Resolucion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UBIGEO = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IdDepartamento = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nom_Departamento = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IdProvincia = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nom_Provincia = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IdDistrito = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nom_Distrito = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaRegistroSistema = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.kryptonPanelMain, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.kryptonPanelMain.SuspendLayout()
         CType(Me.kryptonSplitContainerMain, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -160,6 +162,9 @@ Partial Class ControlConsultasSunat
         CType(Me.kryptonHeaderGroupNavigation.Panel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.kryptonHeaderGroupNavigation.Panel.SuspendLayout()
         Me.kryptonHeaderGroupNavigation.SuspendLayout()
+        CType(Me.cmbDistrito, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbProvincia, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbDepartamento, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.kryptonSplitContainerDetails, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.kryptonSplitContainerDetails.Panel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.kryptonSplitContainerDetails.Panel1.SuspendLayout()
@@ -175,9 +180,11 @@ Partial Class ControlConsultasSunat
         CType(Me.KryptonHeaderGroup1.Panel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.KryptonHeaderGroup1.Panel.SuspendLayout()
         Me.KryptonHeaderGroup1.SuspendLayout()
-        CType(Me.DgClientes, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DgAfiliadosSunat, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContextMenuStrip2.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
+        CType(Me.cmbEstadoContribuyente, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'kryptonPanelMain
@@ -206,7 +213,7 @@ Partial Class ControlConsultasSunat
         '
         Me.kryptonSplitContainerMain.Panel2.Controls.Add(Me.kryptonSplitContainerDetails)
         Me.kryptonSplitContainerMain.Size = New System.Drawing.Size(1049, 511)
-        Me.kryptonSplitContainerMain.SplitterDistance = 300
+        Me.kryptonSplitContainerMain.SplitterDistance = 292
         Me.kryptonSplitContainerMain.TabIndex = 0
         '
         'kryptonHeaderGroupNavigation
@@ -219,34 +226,123 @@ Partial Class ControlConsultasSunat
         'kryptonHeaderGroupNavigation.Panel
         '
         Me.kryptonHeaderGroupNavigation.Panel.AutoScroll = True
-        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.chkNomCliente)
-        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.txtNomCliente)
+        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.KryptonCheckBox1)
+        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.cmbEstadoContribuyente)
+        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.chkFechaActualizacion)
+        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.KryptonDateTimePicker1)
+        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.KryptonDateTimePicker2)
+        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.chkFechaRegistro)
+        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.dtFRegistroFin)
+        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.dtFRegistroIni)
+        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.txtNumeroRuc)
+        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.chkDistrito)
+        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.chkProvincia)
+        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.cmbDistrito)
+        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.cmbProvincia)
+        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.cmbDepartamento)
+        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.chkDepartamento)
         Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.ChkNumDocuCliente)
         Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.BtnBuscar)
-        Me.kryptonHeaderGroupNavigation.Panel.Controls.Add(Me.txtNumDocCliente)
-        Me.kryptonHeaderGroupNavigation.Size = New System.Drawing.Size(300, 511)
+        Me.kryptonHeaderGroupNavigation.Size = New System.Drawing.Size(292, 511)
         Me.kryptonHeaderGroupNavigation.TabIndex = 0
         Me.kryptonHeaderGroupNavigation.ValuesPrimary.Heading = "Consultas"
-
+        Me.kryptonHeaderGroupNavigation.ValuesPrimary.Image = Global.Sunatv2.Win.My.Resources.Resources.BuscarLupa_16
         '
-        'chkNomCliente
+        'chkFechaRegistro
         '
-        Me.chkNomCliente.Location = New System.Drawing.Point(9, 41)
-        Me.chkNomCliente.Name = "chkNomCliente"
-        Me.chkNomCliente.Size = New System.Drawing.Size(95, 20)
-        Me.chkNomCliente.TabIndex = 352
-        Me.chkNomCliente.Values.Text = "Nombre Clie."
+        Me.chkFechaRegistro.Checked = True
+        Me.chkFechaRegistro.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkFechaRegistro.Location = New System.Drawing.Point(21, 229)
+        Me.chkFechaRegistro.Name = "chkFechaRegistro"
+        Me.chkFechaRegistro.Size = New System.Drawing.Size(110, 20)
+        Me.chkFechaRegistro.TabIndex = 361
+        Me.chkFechaRegistro.Values.Text = "Fecha Registro :"
         '
-        'txtNomCliente
+        'dtFRegistroFin
         '
-        Me.txtNomCliente.Location = New System.Drawing.Point(140, 41)
-        Me.txtNomCliente.Name = "txtNomCliente"
-        Me.txtNomCliente.Size = New System.Drawing.Size(150, 23)
-        Me.txtNomCliente.TabIndex = 351
+        Me.dtFRegistroFin.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtFRegistroFin.Location = New System.Drawing.Point(164, 255)
+        Me.dtFRegistroFin.Name = "dtFRegistroFin"
+        Me.dtFRegistroFin.Size = New System.Drawing.Size(118, 21)
+        Me.dtFRegistroFin.TabIndex = 360
+        '
+        'dtFRegistroIni
+        '
+        Me.dtFRegistroIni.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtFRegistroIni.Location = New System.Drawing.Point(21, 255)
+        Me.dtFRegistroIni.Name = "dtFRegistroIni"
+        Me.dtFRegistroIni.Size = New System.Drawing.Size(118, 21)
+        Me.dtFRegistroIni.TabIndex = 359
+        '
+        'txtNumeroRuc
+        '
+        Me.txtNumeroRuc.Location = New System.Drawing.Point(21, 45)
+        Me.txtNumeroRuc.Name = "txtNumeroRuc"
+        Me.txtNumeroRuc.Size = New System.Drawing.Size(118, 23)
+        Me.txtNumeroRuc.TabIndex = 358
+        '
+        'chkDistrito
+        '
+        Me.chkDistrito.Location = New System.Drawing.Point(21, 180)
+        Me.chkDistrito.Name = "chkDistrito"
+        Me.chkDistrito.Size = New System.Drawing.Size(69, 20)
+        Me.chkDistrito.TabIndex = 357
+        Me.chkDistrito.Values.Text = "Distrito :"
+        '
+        'chkProvincia
+        '
+        Me.chkProvincia.Location = New System.Drawing.Point(21, 128)
+        Me.chkProvincia.Name = "chkProvincia"
+        Me.chkProvincia.Size = New System.Drawing.Size(79, 20)
+        Me.chkProvincia.TabIndex = 356
+        Me.chkProvincia.Values.Text = "Provincia :"
+        '
+        'cmbDistrito
+        '
+        Me.cmbDistrito.DisplayMember = "Nom_Distrito"
+        Me.cmbDistrito.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbDistrito.DropDownWidth = 121
+        Me.cmbDistrito.Location = New System.Drawing.Point(21, 204)
+        Me.cmbDistrito.Name = "cmbDistrito"
+        Me.cmbDistrito.Size = New System.Drawing.Size(261, 21)
+        Me.cmbDistrito.TabIndex = 355
+        Me.cmbDistrito.ValueMember = "IdDistrito"
+        '
+        'cmbProvincia
+        '
+        Me.cmbProvincia.DisplayMember = "Nom_Provincia"
+        Me.cmbProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbProvincia.DropDownWidth = 121
+        Me.cmbProvincia.Location = New System.Drawing.Point(21, 154)
+        Me.cmbProvincia.Name = "cmbProvincia"
+        Me.cmbProvincia.Size = New System.Drawing.Size(261, 21)
+        Me.cmbProvincia.TabIndex = 354
+        Me.cmbProvincia.ValueMember = "IdProvincia"
+        '
+        'cmbDepartamento
+        '
+        Me.cmbDepartamento.DisplayMember = "Nom_Departamento"
+        Me.cmbDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbDepartamento.DropDownWidth = 121
+        Me.cmbDepartamento.Location = New System.Drawing.Point(21, 102)
+        Me.cmbDepartamento.Name = "cmbDepartamento"
+        Me.cmbDepartamento.Size = New System.Drawing.Size(261, 21)
+        Me.cmbDepartamento.TabIndex = 353
+        Me.cmbDepartamento.ValueMember = "IdDepartamento"
+        '
+        'chkDepartamento
+        '
+        Me.chkDepartamento.Checked = True
+        Me.chkDepartamento.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkDepartamento.Location = New System.Drawing.Point(21, 76)
+        Me.chkDepartamento.Name = "chkDepartamento"
+        Me.chkDepartamento.Size = New System.Drawing.Size(102, 20)
+        Me.chkDepartamento.TabIndex = 352
+        Me.chkDepartamento.Values.Text = "Departamento"
         '
         'ChkNumDocuCliente
         '
-        Me.ChkNumDocuCliente.Location = New System.Drawing.Point(9, 12)
+        Me.ChkNumDocuCliente.Location = New System.Drawing.Point(21, 19)
         Me.ChkNumDocuCliente.Name = "ChkNumDocuCliente"
         Me.ChkNumDocuCliente.Size = New System.Drawing.Size(105, 20)
         Me.ChkNumDocuCliente.TabIndex = 347
@@ -254,20 +350,12 @@ Partial Class ControlConsultasSunat
         '
         'BtnBuscar
         '
-        Me.BtnBuscar.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.LowProfile
-        Me.BtnBuscar.Location = New System.Drawing.Point(211, 75)
+        Me.BtnBuscar.Location = New System.Drawing.Point(21, 399)
         Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(79, 29)
+        Me.BtnBuscar.Size = New System.Drawing.Size(261, 29)
         Me.BtnBuscar.TabIndex = 6
-
+        Me.BtnBuscar.Values.Image = Global.Sunatv2.Win.My.Resources.Resources.BuscarLupa_161
         Me.BtnBuscar.Values.Text = "&Buscar"
-        '
-        'txtNumDocCliente
-        '
-        Me.txtNumDocCliente.Location = New System.Drawing.Point(140, 12)
-        Me.txtNumDocCliente.Name = "txtNumDocCliente"
-        Me.txtNumDocCliente.Size = New System.Drawing.Size(150, 23)
-        Me.txtNumDocCliente.TabIndex = 4
         '
         'kryptonSplitContainerDetails
         '
@@ -285,7 +373,7 @@ Partial Class ControlConsultasSunat
         'kryptonSplitContainerDetails.Panel2
         '
         Me.kryptonSplitContainerDetails.Panel2.Controls.Add(Me.KryptonHeaderGroup1)
-        Me.kryptonSplitContainerDetails.Size = New System.Drawing.Size(744, 511)
+        Me.kryptonSplitContainerDetails.Size = New System.Drawing.Size(752, 511)
         Me.kryptonSplitContainerDetails.SplitterDistance = 170
         Me.kryptonSplitContainerDetails.TabIndex = 0
         '
@@ -604,120 +692,198 @@ Partial Class ControlConsultasSunat
         '
         Me.KryptonHeaderGroup1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.KryptonHeaderGroup1.HeaderVisibleSecondary = False
+        Me.KryptonHeaderGroup1.KryptonContextMenu = Me.KryptonContextMenu1
         Me.KryptonHeaderGroup1.Location = New System.Drawing.Point(0, 0)
         Me.KryptonHeaderGroup1.Name = "KryptonHeaderGroup1"
         '
         'KryptonHeaderGroup1.Panel
         '
-        Me.KryptonHeaderGroup1.Panel.Controls.Add(Me.DgClientes)
-        Me.KryptonHeaderGroup1.Size = New System.Drawing.Size(744, 511)
+        Me.KryptonHeaderGroup1.Panel.Controls.Add(Me.DgAfiliadosSunat)
+        Me.KryptonHeaderGroup1.Size = New System.Drawing.Size(752, 511)
         Me.KryptonHeaderGroup1.StateNormal.HeaderPrimary.Content.Image.ImageH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far
         Me.KryptonHeaderGroup1.TabIndex = 1
-        Me.KryptonHeaderGroup1.ValuesPrimary.Heading = "Clientes"
+        Me.KryptonHeaderGroup1.ValuesPrimary.Heading = "Afiliados"
         Me.KryptonHeaderGroup1.ValuesPrimary.Image = Nothing
         '
-        'DgClientes
+        'DgAfiliadosSunat
         '
-        Me.DgClientes.AllowUserToAddRows = False
-        Me.DgClientes.AllowUserToDeleteRows = False
-        Me.DgClientes.AllowUserToResizeRows = False
+        Me.DgAfiliadosSunat.AllowUserToAddRows = False
+        Me.DgAfiliadosSunat.AllowUserToDeleteRows = False
+        Me.DgAfiliadosSunat.AllowUserToResizeRows = False
         DataGridViewCellStyle23.BackColor = System.Drawing.Color.Lavender
-        Me.DgClientes.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle23
-        Me.DgClientes.ColumnHeadersHeight = 25
-        Me.DgClientes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2, Me.IdCliente, Me.Codigo_Cliente, Me.Nom_Entidad, Me.Cliente, Me.Nom_TipoDocumento, Me.NumDocumento, Me.Direccion, Me.Nom_Departamento, Me.Nom_Provincia, Me.Nom_Distrito, Me.FechaRegistro, Me.U_Registro, Me.FechaModificacion, Me.U_Modificacion, Me.Nom_Estado, Me.Clie, Me.Prov, Me.IdEstado, Me.IdTipoDocumento, Me.IdDepartamento, Me.IdProvincia, Me.IdDistrito})
-        Me.DgClientes.ContextMenuStrip = Me.ContextMenuStrip2
-        Me.DgClientes.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DgClientes.GridStyles.Style = ComponentFactory.Krypton.Toolkit.DataGridViewStyle.Mixed
-        Me.DgClientes.GridStyles.StyleBackground = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundSheet
-        Me.DgClientes.GridStyles.StyleDataCells = ComponentFactory.Krypton.Toolkit.GridStyle.Sheet
-        Me.DgClientes.GridStyles.StyleRow = ComponentFactory.Krypton.Toolkit.GridStyle.Sheet
-        Me.DgClientes.Location = New System.Drawing.Point(0, 0)
-        Me.DgClientes.MultiSelect = False
-        Me.DgClientes.Name = "DgClientes"
-        Me.DgClientes.ReadOnly = True
-        Me.DgClientes.RowHeadersVisible = False
-        Me.DgClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DgClientes.Size = New System.Drawing.Size(742, 479)
-        Me.DgClientes.StateCommon.Background.Color1 = System.Drawing.Color.White
-        Me.DgClientes.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundSheet
-        Me.DgClientes.StateCommon.HeaderColumn.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
-        Me.DgClientes.StateCommon.HeaderColumn.Content.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
-        Me.DgClientes.TabIndex = 50
+        Me.DgAfiliadosSunat.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle23
+        Me.DgAfiliadosSunat.ColumnHeadersHeight = 25
+        Me.DgAfiliadosSunat.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2, Me.IdPadron, Me.RUC, Me.RazonSocial, Me.DireccionFiscal, Me.EstadoContribuyente, Me.FechaIncripcion, Me.Fecha, Me.Resolucion, Me.UBIGEO, Me.IdDepartamento, Me.Nom_Departamento, Me.IdProvincia, Me.Nom_Provincia, Me.IdDistrito, Me.Nom_Distrito, Me.FechaRegistroSistema})
+        Me.DgAfiliadosSunat.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.DgAfiliadosSunat.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DgAfiliadosSunat.GridStyles.Style = ComponentFactory.Krypton.Toolkit.DataGridViewStyle.Mixed
+        Me.DgAfiliadosSunat.GridStyles.StyleBackground = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundSheet
+        Me.DgAfiliadosSunat.GridStyles.StyleDataCells = ComponentFactory.Krypton.Toolkit.GridStyle.Sheet
+        Me.DgAfiliadosSunat.GridStyles.StyleRow = ComponentFactory.Krypton.Toolkit.GridStyle.Sheet
+        Me.DgAfiliadosSunat.Location = New System.Drawing.Point(0, 0)
+        Me.DgAfiliadosSunat.MultiSelect = False
+        Me.DgAfiliadosSunat.Name = "DgAfiliadosSunat"
+        Me.DgAfiliadosSunat.ReadOnly = True
+        Me.DgAfiliadosSunat.RowHeadersVisible = False
+        Me.DgAfiliadosSunat.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DgAfiliadosSunat.Size = New System.Drawing.Size(750, 479)
+        Me.DgAfiliadosSunat.StateCommon.Background.Color1 = System.Drawing.Color.White
+        Me.DgAfiliadosSunat.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundSheet
+        Me.DgAfiliadosSunat.StateCommon.HeaderColumn.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
+        Me.DgAfiliadosSunat.StateCommon.HeaderColumn.Content.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
+        Me.DgAfiliadosSunat.TabIndex = 50
         '
         'ContextMenuStrip2
         '
         Me.ContextMenuStrip2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ContextMenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem, Me.ModificarToolStripMenuItem})
+        Me.ContextMenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MostrarColumnasToolStripMenuItem})
         Me.ContextMenuStrip2.Name = "ContextMenuStrip2"
-        Me.ContextMenuStrip2.Size = New System.Drawing.Size(126, 48)
-        '
-        'NuevoToolStripMenuItem
-        '
-
-        Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
-        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
-        Me.NuevoToolStripMenuItem.Text = "&Nuevo"
-        '
-        'ModificarToolStripMenuItem
-        '
-
-        Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
-        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
-        Me.ModificarToolStripMenuItem.Text = "&Modificar"
+        Me.ContextMenuStrip2.Size = New System.Drawing.Size(173, 26)
         '
         'ToolStrip1
         '
         Me.ToolStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripButton, Me.ActualizarToolStripButton, Me.GuardarToolStripButton, Me.toolStripSeparator, Me.ToolStripButtonBuscar, Me.FiltrarToolStripButton, Me.ExportarToolStripButton, Me.BuscarToolStripButton, Me.ImprimirToolStripButton, Me.CancelarToolStripButton, Me.toolStripReadingPane, Me.toolStripPosition, Me.ToolStripSeparator1, Me.ToolStripButton2})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ActualizarToolStripButton, Me.toolStripSeparator, Me.FiltrarToolStripButton, Me.ExportarToolStripButton, Me.ToolStripSeparator1, Me.ToolStripButton2})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(1057, 25)
         Me.ToolStrip1.TabIndex = 97
         Me.ToolStrip1.Text = "ToolStrip1"
         '
-        'NuevoToolStripButton
-        '
-
-        Me.NuevoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.NuevoToolStripButton.Name = "NuevoToolStripButton"
-        Me.NuevoToolStripButton.Size = New System.Drawing.Size(62, 22)
-        Me.NuevoToolStripButton.Text = "&Nuevo"
-        '
-        'ActualizarToolStripButton
-        '
-
-        Me.ActualizarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ActualizarToolStripButton.Name = "ActualizarToolStripButton"
-        Me.ActualizarToolStripButton.Size = New System.Drawing.Size(79, 22)
-        Me.ActualizarToolStripButton.Text = "&Actualizar"
-        '
-        'GuardarToolStripButton
-        '
-        Me.GuardarToolStripButton.Enabled = False
-        Me.GuardarToolStripButton.Image = CType(resources.GetObject("GuardarToolStripButton.Image"), System.Drawing.Image)
-        Me.GuardarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.GuardarToolStripButton.Name = "GuardarToolStripButton"
-        Me.GuardarToolStripButton.Size = New System.Drawing.Size(69, 22)
-        Me.GuardarToolStripButton.Text = "&Guardar"
-        Me.GuardarToolStripButton.Visible = False
-        '
         'toolStripSeparator
         '
         Me.toolStripSeparator.Name = "toolStripSeparator"
         Me.toolStripSeparator.Size = New System.Drawing.Size(6, 25)
         '
-        'ToolStripButtonBuscar
+        'ToolStripSeparator1
         '
-        Me.ToolStripButtonBuscar.Image = CType(resources.GetObject("ToolStripButtonBuscar.Image"), System.Drawing.Image)
-        Me.ToolStripButtonBuscar.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButtonBuscar.Name = "ToolStripButtonBuscar"
-        Me.ToolStripButtonBuscar.Size = New System.Drawing.Size(62, 22)
-        Me.ToolStripButtonBuscar.Text = "&Buscar"
-        Me.ToolStripButtonBuscar.Visible = False
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
+        '
+        'chkFechaActualizacion
+        '
+        Me.chkFechaActualizacion.Checked = True
+        Me.chkFechaActualizacion.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkFechaActualizacion.Location = New System.Drawing.Point(21, 282)
+        Me.chkFechaActualizacion.Name = "chkFechaActualizacion"
+        Me.chkFechaActualizacion.Size = New System.Drawing.Size(136, 20)
+        Me.chkFechaActualizacion.TabIndex = 364
+        Me.chkFechaActualizacion.Values.Text = "Fecha Actualizacion :"
+        '
+        'KryptonDateTimePicker1
+        '
+        Me.KryptonDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.KryptonDateTimePicker1.Location = New System.Drawing.Point(164, 308)
+        Me.KryptonDateTimePicker1.Name = "KryptonDateTimePicker1"
+        Me.KryptonDateTimePicker1.Size = New System.Drawing.Size(118, 21)
+        Me.KryptonDateTimePicker1.TabIndex = 363
+        '
+        'KryptonDateTimePicker2
+        '
+        Me.KryptonDateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.KryptonDateTimePicker2.Location = New System.Drawing.Point(21, 308)
+        Me.KryptonDateTimePicker2.Name = "KryptonDateTimePicker2"
+        Me.KryptonDateTimePicker2.Size = New System.Drawing.Size(118, 21)
+        Me.KryptonDateTimePicker2.TabIndex = 362
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip2"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(119, 70)
+        '
+        'MostrarColumnasToolStripMenuItem
+        '
+        Me.MostrarColumnasToolStripMenuItem.Name = "MostrarColumnasToolStripMenuItem"
+        Me.MostrarColumnasToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
+        Me.MostrarColumnasToolStripMenuItem.Text = "Mostrar Columnas"
+        '
+        'KryptonContextMenu1
+        '
+        Me.KryptonContextMenu1.Items.AddRange(New ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemBase() {Me.KryptonContextMenuCheckBox1, Me.KryptonContextMenuCheckBox2})
+        '
+        'KryptonContextMenuCheckBox1
+        '
+        Me.KryptonContextMenuCheckBox1.ExtraText = ""
+        Me.KryptonContextMenuCheckBox1.Text = "Dirección Fiscal"
+        '
+        'KryptonContextMenuCheckBox2
+        '
+        Me.KryptonContextMenuCheckBox2.ExtraText = ""
+        Me.KryptonContextMenuCheckBox2.Text = "Ple"
+        '
+        'KryptonContextMenuCheckBox3
+        '
+        Me.KryptonContextMenuCheckBox3.ExtraText = ""
+        '
+        'KryptonContextMenuCheckBox4
+        '
+        Me.KryptonContextMenuCheckBox4.ExtraText = ""
+        '
+        'KryptonContextMenuCheckBox5
+        '
+        Me.KryptonContextMenuCheckBox5.ExtraText = ""
+        '
+        'KryptonCheckBox1
+        '
+        Me.KryptonCheckBox1.Location = New System.Drawing.Point(21, 335)
+        Me.KryptonCheckBox1.Name = "KryptonCheckBox1"
+        Me.KryptonCheckBox1.Size = New System.Drawing.Size(167, 20)
+        Me.KryptonCheckBox1.TabIndex = 366
+        Me.KryptonCheckBox1.Values.Text = "Estado del Contribuyente :"
+        '
+        'cmbEstadoContribuyente
+        '
+        Me.cmbEstadoContribuyente.DisplayMember = "Nom_Distrito"
+        Me.cmbEstadoContribuyente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbEstadoContribuyente.DropDownWidth = 121
+        Me.cmbEstadoContribuyente.Location = New System.Drawing.Point(21, 359)
+        Me.cmbEstadoContribuyente.Name = "cmbEstadoContribuyente"
+        Me.cmbEstadoContribuyente.Size = New System.Drawing.Size(261, 21)
+        Me.cmbEstadoContribuyente.TabIndex = 365
+        Me.cmbEstadoContribuyente.ValueMember = "IdDistrito"
+        '
+        'DataGridViewImageColumn1
+        '
+        Me.DataGridViewImageColumn1.HeaderText = " "
+        Me.DataGridViewImageColumn1.Image = Global.Sunatv2.Win.My.Resources.Resources.flechaderecha_16
+        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
+        Me.DataGridViewImageColumn1.ReadOnly = True
+        Me.DataGridViewImageColumn1.Width = 30
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Image = Global.Sunatv2.Win.My.Resources.Resources.Embudo_16
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(118, 22)
+        Me.ToolStripMenuItem1.Text = "&Filtrar"
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.Image = Global.Sunatv2.Win.My.Resources.Resources.Excel_16
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(118, 22)
+        Me.ToolStripMenuItem2.Text = "&Exportar"
+        '
+        'ToolStripMenuItem3
+        '
+        Me.ToolStripMenuItem3.Image = Global.Sunatv2.Win.My.Resources.Resources.logout_16
+        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(118, 22)
+        Me.ToolStripMenuItem3.Text = "&Salir"
+        '
+        'ActualizarToolStripButton
+        '
+        Me.ActualizarToolStripButton.Image = Global.Sunatv2.Win.My.Resources.Resources.FlechaActualiza_16
+        Me.ActualizarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ActualizarToolStripButton.Name = "ActualizarToolStripButton"
+        Me.ActualizarToolStripButton.Size = New System.Drawing.Size(79, 22)
+        Me.ActualizarToolStripButton.Text = "&Actualizar"
         '
         'FiltrarToolStripButton
         '
-
+        Me.FiltrarToolStripButton.Image = Global.Sunatv2.Win.My.Resources.Resources.Embudo_16
         Me.FiltrarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.FiltrarToolStripButton.Name = "FiltrarToolStripButton"
         Me.FiltrarToolStripButton.Size = New System.Drawing.Size(57, 22)
@@ -725,71 +891,15 @@ Partial Class ControlConsultasSunat
         '
         'ExportarToolStripButton
         '
-
+        Me.ExportarToolStripButton.Image = Global.Sunatv2.Win.My.Resources.Resources.Excel_16
         Me.ExportarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ExportarToolStripButton.Name = "ExportarToolStripButton"
         Me.ExportarToolStripButton.Size = New System.Drawing.Size(71, 22)
         Me.ExportarToolStripButton.Text = "&Exportar"
-        Me.ExportarToolStripButton.Visible = False
-        '
-        'BuscarToolStripButton
-        '
-        Me.BuscarToolStripButton.Image = CType(resources.GetObject("BuscarToolStripButton.Image"), System.Drawing.Image)
-        Me.BuscarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.BuscarToolStripButton.Name = "BuscarToolStripButton"
-        Me.BuscarToolStripButton.Size = New System.Drawing.Size(62, 22)
-        Me.BuscarToolStripButton.Text = "&Buscar"
-        Me.BuscarToolStripButton.Visible = False
-        '
-        'ImprimirToolStripButton
-        '
-        Me.ImprimirToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ImprimirToolStripButton.Image = CType(resources.GetObject("ImprimirToolStripButton.Image"), System.Drawing.Image)
-        Me.ImprimirToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ImprimirToolStripButton.Name = "ImprimirToolStripButton"
-        Me.ImprimirToolStripButton.Size = New System.Drawing.Size(23, 22)
-        Me.ImprimirToolStripButton.Text = "&Imprimir"
-        Me.ImprimirToolStripButton.Visible = False
-        '
-        'CancelarToolStripButton
-        '
-        Me.CancelarToolStripButton.Image = CType(resources.GetObject("CancelarToolStripButton.Image"), System.Drawing.Image)
-        Me.CancelarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.CancelarToolStripButton.Name = "CancelarToolStripButton"
-        Me.CancelarToolStripButton.Size = New System.Drawing.Size(68, 22)
-        Me.CancelarToolStripButton.Text = "&Acoplar"
-        Me.CancelarToolStripButton.Visible = False
-        '
-        'toolStripReadingPane
-        '
-        Me.toolStripReadingPane.CheckOnClick = True
-        Me.toolStripReadingPane.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.toolStripReadingPane.Image = CType(resources.GetObject("toolStripReadingPane.Image"), System.Drawing.Image)
-        Me.toolStripReadingPane.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.toolStripReadingPane.Name = "toolStripReadingPane"
-        Me.toolStripReadingPane.Size = New System.Drawing.Size(23, 22)
-        Me.toolStripReadingPane.ToolTipText = "Show/Hide the reading pane"
-        Me.toolStripReadingPane.Visible = False
-        '
-        'toolStripPosition
-        '
-        Me.toolStripPosition.CheckOnClick = True
-        Me.toolStripPosition.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.toolStripPosition.Image = CType(resources.GetObject("toolStripPosition.Image"), System.Drawing.Image)
-        Me.toolStripPosition.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.toolStripPosition.Name = "toolStripPosition"
-        Me.toolStripPosition.Size = New System.Drawing.Size(23, 22)
-        Me.toolStripPosition.ToolTipText = "Show reading pane on right or bottom"
-        Me.toolStripPosition.Visible = False
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
         '
         'ToolStripButton2
         '
-
+        Me.ToolStripButton2.Image = Global.Sunatv2.Win.My.Resources.Resources.logout_16
         Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton2.Name = "ToolStripButton2"
         Me.ToolStripButton2.Size = New System.Drawing.Size(49, 22)
@@ -798,222 +908,106 @@ Partial Class ControlConsultasSunat
         'Column2
         '
         Me.Column2.HeaderText = " "
-
+        Me.Column2.Image = Global.Sunatv2.Win.My.Resources.Resources.flechaderecha_16
         Me.Column2.Name = "Column2"
         Me.Column2.ReadOnly = True
         Me.Column2.Width = 30
         '
-        'IdCliente
+        'IdPadron
         '
-        Me.IdCliente.DataPropertyName = "IdCliente"
+        Me.IdPadron.DataPropertyName = "IdPadron"
         DataGridViewCellStyle24.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IdCliente.DefaultCellStyle = DataGridViewCellStyle24
-        Me.IdCliente.HeaderText = "IdCliente"
-        Me.IdCliente.Name = "IdCliente"
-        Me.IdCliente.ReadOnly = True
-        Me.IdCliente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.IdCliente.Visible = False
-        Me.IdCliente.Width = 70
+        Me.IdPadron.DefaultCellStyle = DataGridViewCellStyle24
+        Me.IdPadron.HeaderText = "IdPadron"
+        Me.IdPadron.Name = "IdPadron"
+        Me.IdPadron.ReadOnly = True
+        Me.IdPadron.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.IdPadron.Visible = False
+        Me.IdPadron.Width = 70
         '
-        'Codigo_Cliente
+        'RUC
         '
-        Me.Codigo_Cliente.DataPropertyName = "Codigo_Cliente"
+        Me.RUC.DataPropertyName = "RUC"
         DataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle25.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Codigo_Cliente.DefaultCellStyle = DataGridViewCellStyle25
-        Me.Codigo_Cliente.HeaderText = "Cod. Cliente"
-        Me.Codigo_Cliente.Name = "Codigo_Cliente"
-        Me.Codigo_Cliente.ReadOnly = True
-        Me.Codigo_Cliente.Width = 80
+        DataGridViewCellStyle25.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RUC.DefaultCellStyle = DataGridViewCellStyle25
+        Me.RUC.HeaderText = "N° Ruc"
+        Me.RUC.Name = "RUC"
+        Me.RUC.ReadOnly = True
         '
-        'Nom_Entidad
+        'RazonSocial
         '
-        Me.Nom_Entidad.DataPropertyName = "Nom_Entidad"
-        DataGridViewCellStyle26.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Nom_Entidad.DefaultCellStyle = DataGridViewCellStyle26
-        Me.Nom_Entidad.HeaderText = "Entidad"
-        Me.Nom_Entidad.Name = "Nom_Entidad"
-        Me.Nom_Entidad.ReadOnly = True
-        Me.Nom_Entidad.Width = 250
+        Me.RazonSocial.DataPropertyName = "RazonSocial"
+        DataGridViewCellStyle26.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RazonSocial.DefaultCellStyle = DataGridViewCellStyle26
+        Me.RazonSocial.HeaderText = "RazonSocial"
+        Me.RazonSocial.Name = "RazonSocial"
+        Me.RazonSocial.ReadOnly = True
+        Me.RazonSocial.Width = 300
         '
-        'Cliente
+        'DireccionFiscal
         '
-        Me.Cliente.DataPropertyName = "Cliente"
-        DataGridViewCellStyle27.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Cliente.DefaultCellStyle = DataGridViewCellStyle27
-        Me.Cliente.HeaderText = "Cliente"
-        Me.Cliente.Name = "Cliente"
-        Me.Cliente.ReadOnly = True
-        Me.Cliente.Visible = False
-        Me.Cliente.Width = 200
+        Me.DireccionFiscal.DataPropertyName = "DireccionFiscal"
+        DataGridViewCellStyle27.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DireccionFiscal.DefaultCellStyle = DataGridViewCellStyle27
+        Me.DireccionFiscal.HeaderText = "Dirección Físcal"
+        Me.DireccionFiscal.Name = "DireccionFiscal"
+        Me.DireccionFiscal.ReadOnly = True
+        Me.DireccionFiscal.Width = 300
         '
-        'Nom_TipoDocumento
+        'EstadoContribuyente
         '
-        Me.Nom_TipoDocumento.DataPropertyName = "Nom_TipoDocumento"
+        Me.EstadoContribuyente.DataPropertyName = "EstadoContribuyente"
         DataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle28.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Nom_TipoDocumento.DefaultCellStyle = DataGridViewCellStyle28
-        Me.Nom_TipoDocumento.HeaderText = "Tip. Doc."
-        Me.Nom_TipoDocumento.Name = "Nom_TipoDocumento"
-        Me.Nom_TipoDocumento.ReadOnly = True
-        Me.Nom_TipoDocumento.Width = 80
+        DataGridViewCellStyle28.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle28.ForeColor = System.Drawing.Color.Blue
+        Me.EstadoContribuyente.DefaultCellStyle = DataGridViewCellStyle28
+        Me.EstadoContribuyente.HeaderText = "Estado Contribuyente"
+        Me.EstadoContribuyente.Name = "EstadoContribuyente"
+        Me.EstadoContribuyente.ReadOnly = True
+        Me.EstadoContribuyente.Width = 150
         '
-        'NumDocumento
+        'FechaIncripcion
         '
-        Me.NumDocumento.DataPropertyName = "NumDocumento"
+        Me.FechaIncripcion.DataPropertyName = "FechaIncripcion"
         DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle29.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumDocumento.DefaultCellStyle = DataGridViewCellStyle29
-        Me.NumDocumento.HeaderText = "Documento"
-        Me.NumDocumento.Name = "NumDocumento"
-        Me.NumDocumento.ReadOnly = True
-        Me.NumDocumento.Width = 90
+        DataGridViewCellStyle29.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FechaIncripcion.DefaultCellStyle = DataGridViewCellStyle29
+        Me.FechaIncripcion.HeaderText = "F. Incripcion"
+        Me.FechaIncripcion.Name = "FechaIncripcion"
+        Me.FechaIncripcion.ReadOnly = True
         '
-        'Direccion
+        'Fecha
         '
-        Me.Direccion.DataPropertyName = "Direccion"
-        DataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle30.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Direccion.DefaultCellStyle = DataGridViewCellStyle30
-        Me.Direccion.HeaderText = "Direccion"
-        Me.Direccion.Name = "Direccion"
-        Me.Direccion.ReadOnly = True
-        Me.Direccion.Width = 200
+        Me.Fecha.DataPropertyName = "Fecha"
+        DataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle30.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle30
+        Me.Fecha.HeaderText = "Fecha"
+        Me.Fecha.Name = "Fecha"
+        Me.Fecha.ReadOnly = True
         '
-        'Nom_Departamento
+        'Resolucion
         '
-        Me.Nom_Departamento.DataPropertyName = "Nom_Departamento"
-        DataGridViewCellStyle31.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Nom_Departamento.DefaultCellStyle = DataGridViewCellStyle31
-        Me.Nom_Departamento.HeaderText = "Departamento"
-        Me.Nom_Departamento.Name = "Nom_Departamento"
-        Me.Nom_Departamento.ReadOnly = True
+        Me.Resolucion.DataPropertyName = "Resolucion"
+        DataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle31.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Resolucion.DefaultCellStyle = DataGridViewCellStyle31
+        Me.Resolucion.HeaderText = "Resolucion"
+        Me.Resolucion.Name = "Resolucion"
+        Me.Resolucion.ReadOnly = True
+        Me.Resolucion.Width = 200
         '
-        'Nom_Provincia
+        'UBIGEO
         '
-        Me.Nom_Provincia.DataPropertyName = "Nom_Provincia"
-        DataGridViewCellStyle32.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Nom_Provincia.DefaultCellStyle = DataGridViewCellStyle32
-        Me.Nom_Provincia.HeaderText = "Provincia"
-        Me.Nom_Provincia.Name = "Nom_Provincia"
-        Me.Nom_Provincia.ReadOnly = True
-        '
-        'Nom_Distrito
-        '
-        Me.Nom_Distrito.DataPropertyName = "Nom_Distrito"
-        DataGridViewCellStyle33.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Nom_Distrito.DefaultCellStyle = DataGridViewCellStyle33
-        Me.Nom_Distrito.HeaderText = "Distrito"
-        Me.Nom_Distrito.Name = "Nom_Distrito"
-        Me.Nom_Distrito.ReadOnly = True
-        '
-        'FechaRegistro
-        '
-        Me.FechaRegistro.DataPropertyName = "FechaRegistro"
-        DataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle34.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FechaRegistro.DefaultCellStyle = DataGridViewCellStyle34
-        Me.FechaRegistro.HeaderText = "F. Registro"
-        Me.FechaRegistro.Name = "FechaRegistro"
-        Me.FechaRegistro.ReadOnly = True
-        '
-        'U_Registro
-        '
-        Me.U_Registro.DataPropertyName = "U_Registro"
-        DataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle35.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.U_Registro.DefaultCellStyle = DataGridViewCellStyle35
-        Me.U_Registro.HeaderText = "U. Registro"
-        Me.U_Registro.Name = "U_Registro"
-        Me.U_Registro.ReadOnly = True
-        '
-        'FechaModificacion
-        '
-        Me.FechaModificacion.DataPropertyName = "FechaModificacion"
-        DataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle36.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FechaModificacion.DefaultCellStyle = DataGridViewCellStyle36
-        Me.FechaModificacion.HeaderText = "F. Modif."
-        Me.FechaModificacion.Name = "FechaModificacion"
-        Me.FechaModificacion.ReadOnly = True
-        '
-        'U_Modificacion
-        '
-        Me.U_Modificacion.DataPropertyName = "U_Modificacion"
-        DataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle37.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.U_Modificacion.DefaultCellStyle = DataGridViewCellStyle37
-        Me.U_Modificacion.HeaderText = "U Modif"
-        Me.U_Modificacion.Name = "U_Modificacion"
-        Me.U_Modificacion.ReadOnly = True
-        '
-        'Nom_Estado
-        '
-        Me.Nom_Estado.DataPropertyName = "Nom_Estado"
-        DataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle38.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Nom_Estado.DefaultCellStyle = DataGridViewCellStyle38
-        Me.Nom_Estado.HeaderText = "Estado"
-        Me.Nom_Estado.Name = "Nom_Estado"
-        Me.Nom_Estado.ReadOnly = True
-        Me.Nom_Estado.Visible = False
-        Me.Nom_Estado.Width = 80
-        '
-        'Clie
-        '
-        Me.Clie.DataPropertyName = "Clie"
-        DataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle39.NullValue = False
-        Me.Clie.DefaultCellStyle = DataGridViewCellStyle39
-        Me.Clie.FalseValue = Nothing
-        Me.Clie.HeaderText = "Clie"
-        Me.Clie.IndeterminateValue = Nothing
-        Me.Clie.Name = "Clie"
-        Me.Clie.ReadOnly = True
-        Me.Clie.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Clie.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.Clie.TrueValue = Nothing
-        Me.Clie.Width = 40
-        '
-        'Prov
-        '
-        Me.Prov.DataPropertyName = "Prov"
-        DataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle40.NullValue = False
-        Me.Prov.DefaultCellStyle = DataGridViewCellStyle40
-        Me.Prov.FalseValue = Nothing
-        Me.Prov.HeaderText = "Prov"
-        Me.Prov.IndeterminateValue = Nothing
-        Me.Prov.Name = "Prov"
-        Me.Prov.ReadOnly = True
-        Me.Prov.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Prov.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.Prov.TrueValue = Nothing
-        Me.Prov.Width = 40
-        '
-        'IdEstado
-        '
-        Me.IdEstado.DataPropertyName = "IdEstado"
-        DataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle41.NullValue = False
-        Me.IdEstado.DefaultCellStyle = DataGridViewCellStyle41
-        Me.IdEstado.FalseValue = Nothing
-        Me.IdEstado.HeaderText = "Estado"
-        Me.IdEstado.IndeterminateValue = Nothing
-        Me.IdEstado.Name = "IdEstado"
-        Me.IdEstado.ReadOnly = True
-        Me.IdEstado.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.IdEstado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.IdEstado.TrueValue = Nothing
-        Me.IdEstado.Width = 50
-        '
-        'IdTipoDocumento
-        '
-        Me.IdTipoDocumento.DataPropertyName = "IdTipoDocumento"
-        Me.IdTipoDocumento.HeaderText = "IdTipoDocumento"
-        Me.IdTipoDocumento.Name = "IdTipoDocumento"
-        Me.IdTipoDocumento.ReadOnly = True
-        Me.IdTipoDocumento.Visible = False
+        Me.UBIGEO.DataPropertyName = "UBIGEO"
+        DataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle32.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UBIGEO.DefaultCellStyle = DataGridViewCellStyle32
+        Me.UBIGEO.HeaderText = "Ubigeo"
+        Me.UBIGEO.Name = "UBIGEO"
+        Me.UBIGEO.ReadOnly = True
+        Me.UBIGEO.Width = 80
         '
         'IdDepartamento
         '
@@ -1023,6 +1017,16 @@ Partial Class ControlConsultasSunat
         Me.IdDepartamento.ReadOnly = True
         Me.IdDepartamento.Visible = False
         '
+        'Nom_Departamento
+        '
+        Me.Nom_Departamento.DataPropertyName = "Nom_Departamento"
+        DataGridViewCellStyle33.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Nom_Departamento.DefaultCellStyle = DataGridViewCellStyle33
+        Me.Nom_Departamento.HeaderText = "Nom. Departamento"
+        Me.Nom_Departamento.Name = "Nom_Departamento"
+        Me.Nom_Departamento.ReadOnly = True
+        Me.Nom_Departamento.Width = 120
+        '
         'IdProvincia
         '
         Me.IdProvincia.DataPropertyName = "IdProvincia"
@@ -1031,24 +1035,54 @@ Partial Class ControlConsultasSunat
         Me.IdProvincia.ReadOnly = True
         Me.IdProvincia.Visible = False
         '
+        'Nom_Provincia
+        '
+        Me.Nom_Provincia.DataPropertyName = "Nom_Provincia"
+        DataGridViewCellStyle34.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Nom_Provincia.DefaultCellStyle = DataGridViewCellStyle34
+        Me.Nom_Provincia.HeaderText = "Nom. Provincia"
+        Me.Nom_Provincia.Name = "Nom_Provincia"
+        Me.Nom_Provincia.ReadOnly = True
+        Me.Nom_Provincia.Width = 120
+        '
         'IdDistrito
         '
         Me.IdDistrito.DataPropertyName = "IdDistrito"
-        DataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle42.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IdDistrito.DefaultCellStyle = DataGridViewCellStyle42
+        DataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle35.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IdDistrito.DefaultCellStyle = DataGridViewCellStyle35
         Me.IdDistrito.HeaderText = "IdDistrito"
         Me.IdDistrito.Name = "IdDistrito"
         Me.IdDistrito.ReadOnly = True
         Me.IdDistrito.Visible = False
         '
-        'ControlClienteProveedor
+        'Nom_Distrito
+        '
+        Me.Nom_Distrito.DataPropertyName = "Nom_Distrito"
+        DataGridViewCellStyle36.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Nom_Distrito.DefaultCellStyle = DataGridViewCellStyle36
+        Me.Nom_Distrito.HeaderText = "Distrito"
+        Me.Nom_Distrito.Name = "Nom_Distrito"
+        Me.Nom_Distrito.ReadOnly = True
+        Me.Nom_Distrito.Width = 120
+        '
+        'FechaRegistroSistema
+        '
+        Me.FechaRegistroSistema.DataPropertyName = "FechaRegistroSistema"
+        DataGridViewCellStyle37.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FechaRegistroSistema.DefaultCellStyle = DataGridViewCellStyle37
+        Me.FechaRegistroSistema.HeaderText = "F. Reg. Sistema"
+        Me.FechaRegistroSistema.Name = "FechaRegistroSistema"
+        Me.FechaRegistroSistema.ReadOnly = True
+        Me.FechaRegistroSistema.Width = 120
+        '
+        'ControlConsultasSunat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.kryptonPanelMain)
         Me.Controls.Add(Me.ToolStrip1)
-        Me.Name = "ControlClienteProveedor"
+        Me.Name = "ControlConsultasSunat"
         Me.Size = New System.Drawing.Size(1057, 544)
         CType(Me.kryptonPanelMain, System.ComponentModel.ISupportInitialize).EndInit()
         Me.kryptonPanelMain.ResumeLayout(False)
@@ -1063,6 +1097,9 @@ Partial Class ControlConsultasSunat
         Me.kryptonHeaderGroupNavigation.Panel.PerformLayout()
         CType(Me.kryptonHeaderGroupNavigation, System.ComponentModel.ISupportInitialize).EndInit()
         Me.kryptonHeaderGroupNavigation.ResumeLayout(False)
+        CType(Me.cmbDistrito, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cmbProvincia, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cmbDepartamento, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.kryptonSplitContainerDetails.Panel1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.kryptonSplitContainerDetails.Panel1.ResumeLayout(False)
         CType(Me.kryptonSplitContainerDetails.Panel2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1078,10 +1115,12 @@ Partial Class ControlConsultasSunat
         Me.KryptonHeaderGroup1.Panel.ResumeLayout(False)
         CType(Me.KryptonHeaderGroup1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.KryptonHeaderGroup1.ResumeLayout(False)
-        CType(Me.DgClientes, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DgAfiliadosSunat, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ContextMenuStrip2.ResumeLayout(False)
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
+        Me.ContextMenuStrip1.ResumeLayout(False)
+        CType(Me.cmbEstadoContribuyente, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1092,7 +1131,6 @@ Partial Class ControlConsultasSunat
     Private WithEvents kryptonHeaderGroupNavigation As ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup
     Friend WithEvents ChkNumDocuCliente As ComponentFactory.Krypton.Toolkit.KryptonCheckBox
     Friend WithEvents BtnBuscar As ComponentFactory.Krypton.Toolkit.KryptonButton
-    Friend WithEvents txtNumDocCliente As ComponentFactory.Krypton.Toolkit.KryptonTextBox
     Private WithEvents kryptonSplitContainerDetails As ComponentFactory.Krypton.Toolkit.KryptonSplitContainer
     Private WithEvents kryptonHeaderGroupDetails As ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup
     Friend WithEvents ButtonSpecHeaderGroup4 As ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup
@@ -1125,48 +1163,57 @@ Partial Class ControlConsultasSunat
     Friend WithEvents CPM As DataGridViewTextBoxColumn
     Friend WithEvents IdUsuario As DataGridViewTextBoxColumn
     Private WithEvents KryptonHeaderGroup1 As ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup
-    Friend WithEvents DgClientes As ComponentFactory.Krypton.Toolkit.KryptonDataGridView
+    Friend WithEvents DgAfiliadosSunat As ComponentFactory.Krypton.Toolkit.KryptonDataGridView
     Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents NuevoToolStripButton As ToolStripButton
     Friend WithEvents ActualizarToolStripButton As ToolStripButton
-    Friend WithEvents GuardarToolStripButton As ToolStripButton
     Friend WithEvents toolStripSeparator As ToolStripSeparator
-    Friend WithEvents ToolStripButtonBuscar As ToolStripButton
     Friend WithEvents FiltrarToolStripButton As ToolStripButton
     Friend WithEvents ExportarToolStripButton As ToolStripButton
-    Friend WithEvents BuscarToolStripButton As ToolStripButton
-    Friend WithEvents ImprimirToolStripButton As ToolStripButton
-    Friend WithEvents CancelarToolStripButton As ToolStripButton
-    Private WithEvents toolStripReadingPane As ToolStripButton
-    Private WithEvents toolStripPosition As ToolStripButton
     Friend WithEvents ToolStripButton2 As ToolStripButton
     Friend WithEvents ContextMenuStrip2 As ContextMenuStrip
-    Friend WithEvents NuevoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ModificarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents chkNomCliente As ComponentFactory.Krypton.Toolkit.KryptonCheckBox
-    Friend WithEvents txtNomCliente As ComponentFactory.Krypton.Toolkit.KryptonTextBox
+    Friend WithEvents chkDepartamento As ComponentFactory.Krypton.Toolkit.KryptonCheckBox
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents cmbDistrito As ComponentFactory.Krypton.Toolkit.KryptonComboBox
+    Friend WithEvents cmbProvincia As ComponentFactory.Krypton.Toolkit.KryptonComboBox
+    Friend WithEvents cmbDepartamento As ComponentFactory.Krypton.Toolkit.KryptonComboBox
+    Friend WithEvents txtNumeroRuc As ComponentFactory.Krypton.Toolkit.KryptonTextBox
+    Friend WithEvents chkDistrito As ComponentFactory.Krypton.Toolkit.KryptonCheckBox
+    Friend WithEvents chkProvincia As ComponentFactory.Krypton.Toolkit.KryptonCheckBox
+    Friend WithEvents chkFechaRegistro As ComponentFactory.Krypton.Toolkit.KryptonCheckBox
+    Friend WithEvents dtFRegistroFin As ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker
+    Friend WithEvents dtFRegistroIni As ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker
+    Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
+    Friend WithEvents chkFechaActualizacion As ComponentFactory.Krypton.Toolkit.KryptonCheckBox
+    Friend WithEvents KryptonDateTimePicker1 As ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker
+    Friend WithEvents KryptonDateTimePicker2 As ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
+    Friend WithEvents MostrarColumnasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents KryptonContextMenu1 As ComponentFactory.Krypton.Toolkit.KryptonContextMenu
+    Friend WithEvents KryptonContextMenuCheckBox1 As ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox
+    Friend WithEvents KryptonContextMenuCheckBox2 As ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox
+    Friend WithEvents KryptonContextMenuCheckBox3 As ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox
+    Friend WithEvents KryptonContextMenuCheckBox4 As ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox
+    Friend WithEvents KryptonContextMenuCheckBox5 As ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox
+    Friend WithEvents KryptonCheckBox1 As ComponentFactory.Krypton.Toolkit.KryptonCheckBox
+    Friend WithEvents cmbEstadoContribuyente As ComponentFactory.Krypton.Toolkit.KryptonComboBox
     Friend WithEvents Column2 As DataGridViewImageColumn
-    Friend WithEvents IdCliente As DataGridViewTextBoxColumn
-    Friend WithEvents Codigo_Cliente As DataGridViewTextBoxColumn
-    Friend WithEvents Nom_Entidad As DataGridViewTextBoxColumn
-    Friend WithEvents Cliente As DataGridViewTextBoxColumn
-    Friend WithEvents Nom_TipoDocumento As DataGridViewTextBoxColumn
-    Friend WithEvents NumDocumento As DataGridViewTextBoxColumn
-    Friend WithEvents Direccion As DataGridViewTextBoxColumn
-    Friend WithEvents Nom_Departamento As DataGridViewTextBoxColumn
-    Friend WithEvents Nom_Provincia As DataGridViewTextBoxColumn
-    Friend WithEvents Nom_Distrito As DataGridViewTextBoxColumn
-    Friend WithEvents FechaRegistro As DataGridViewTextBoxColumn
-    Friend WithEvents U_Registro As DataGridViewTextBoxColumn
-    Friend WithEvents FechaModificacion As DataGridViewTextBoxColumn
-    Friend WithEvents U_Modificacion As DataGridViewTextBoxColumn
-    Friend WithEvents Nom_Estado As DataGridViewTextBoxColumn
-    Friend WithEvents Clie As ComponentFactory.Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn
-    Friend WithEvents Prov As ComponentFactory.Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn
-    Friend WithEvents IdEstado As ComponentFactory.Krypton.Toolkit.KryptonDataGridViewCheckBoxColumn
-    Friend WithEvents IdTipoDocumento As DataGridViewTextBoxColumn
+    Friend WithEvents IdPadron As DataGridViewTextBoxColumn
+    Friend WithEvents RUC As DataGridViewTextBoxColumn
+    Friend WithEvents RazonSocial As DataGridViewTextBoxColumn
+    Friend WithEvents DireccionFiscal As DataGridViewTextBoxColumn
+    Friend WithEvents EstadoContribuyente As DataGridViewTextBoxColumn
+    Friend WithEvents FechaIncripcion As DataGridViewTextBoxColumn
+    Friend WithEvents Fecha As DataGridViewTextBoxColumn
+    Friend WithEvents Resolucion As DataGridViewTextBoxColumn
+    Friend WithEvents UBIGEO As DataGridViewTextBoxColumn
     Friend WithEvents IdDepartamento As DataGridViewTextBoxColumn
+    Friend WithEvents Nom_Departamento As DataGridViewTextBoxColumn
     Friend WithEvents IdProvincia As DataGridViewTextBoxColumn
+    Friend WithEvents Nom_Provincia As DataGridViewTextBoxColumn
     Friend WithEvents IdDistrito As DataGridViewTextBoxColumn
+    Friend WithEvents Nom_Distrito As DataGridViewTextBoxColumn
+    Friend WithEvents FechaRegistroSistema As DataGridViewTextBoxColumn
 End Class

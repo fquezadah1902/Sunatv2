@@ -58,8 +58,6 @@ Partial Class MDI
         Me.KryptonRibbonGroupButton4 = New ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton()
         Me.KryptonRibbonGroupButton23 = New ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton()
         Me.tabConsultas = New ComponentFactory.Krypton.Ribbon.KryptonRibbonTab()
-        Me.KryptonRibbonGroup3 = New ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup()
-        Me.KryptonRibbonGroupTriple3 = New ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple()
         Me.KryptonRibbonGroup10 = New ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup()
         Me.KryptonRibbonGroupTriple11 = New ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple()
         Me.KryptonRibbonGroupButton16 = New ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton()
@@ -150,7 +148,7 @@ Partial Class MDI
         '
         Me.kryptonLabel1.Location = New System.Drawing.Point(3, 207)
         Me.kryptonLabel1.Name = "kryptonLabel1"
-        Me.kryptonLabel1.Size = New System.Drawing.Size(39, 20)
+        Me.kryptonLabel1.Size = New System.Drawing.Size(39, 22)
         Me.kryptonLabel1.TabIndex = 0
         '
         'kryptonButton2
@@ -214,7 +212,6 @@ Partial Class MDI
         Me.kryptonRibbon.RibbonStrings.RecentDocuments = "Create New Outlook Item"
         Me.kryptonRibbon.RibbonTabs.AddRange(New ComponentFactory.Krypton.Ribbon.KryptonRibbonTab() {Me.tabMantenimiento, Me.tabConsultas})
         Me.kryptonRibbon.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.kryptonRibbon.SelectedContext = Nothing
         Me.kryptonRibbon.SelectedTab = Me.tabConsultas
         Me.kryptonRibbon.Size = New System.Drawing.Size(998, 115)
         Me.kryptonRibbon.TabIndex = 2
@@ -318,13 +315,8 @@ Partial Class MDI
         '
         'tabConsultas
         '
-        Me.tabConsultas.Groups.AddRange(New ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup() {Me.KryptonRibbonGroup3, Me.KryptonRibbonGroup10})
+        Me.tabConsultas.Groups.AddRange(New ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup() {Me.KryptonRibbonGroup10})
         Me.tabConsultas.Text = "Consultas"
-        '
-        'KryptonRibbonGroup3
-        '
-        Me.KryptonRibbonGroup3.Items.AddRange(New ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer() {Me.KryptonRibbonGroupTriple3})
-        Me.KryptonRibbonGroup3.TextLine1 = "Consultas Sunat"
         '
         'KryptonRibbonGroup10
         '
@@ -337,6 +329,8 @@ Partial Class MDI
         '
         'KryptonRibbonGroupButton16
         '
+        Me.KryptonRibbonGroupButton16.ImageLarge = Global.Sunatv2.Win.My.Resources.Resources.servidor
+        Me.KryptonRibbonGroupButton16.ImageSmall = Global.Sunatv2.Win.My.Resources.Resources.servidor
         Me.KryptonRibbonGroupButton16.TextLine1 = "Consultas "
         Me.KryptonRibbonGroupButton16.TextLine2 = "Afiliados Sunat"
         '
@@ -366,6 +360,10 @@ Partial Class MDI
         'kryptonContextMenuItem5
         '
         Me.kryptonContextMenuItem5.Text = "Menu Item"
+        '
+        'kryptonManager1
+        '
+        Me.kryptonManager1.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Office2010Silver
         '
         'statusStrip1
         '
@@ -535,7 +533,7 @@ Partial Class MDI
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MDI"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "Mini ERP - Compras y Ventas - WorkFlow"
+        Me.Text = "Sunatv2"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.panelFill, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelFill.ResumeLayout(False)
@@ -605,8 +603,6 @@ Partial Class MDI
     Friend WithEvents KryptonRibbonProductoGrupo As ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton
     Friend WithEvents KryptonRibbonProductoGrupoSub As ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton
     Friend WithEvents KryptonRibbonProducto As ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton
-    Friend WithEvents KryptonRibbonGroup3 As ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup
-    Friend WithEvents KryptonRibbonGroupTriple3 As ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple
     Friend WithEvents ComodinToolIdCaja As ToolStripStatusLabel
     Friend WithEvents ToolStripStatusLabel3 As ToolStripStatusLabel
     Friend WithEvents KryptonRibbonGroup5 As ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup
