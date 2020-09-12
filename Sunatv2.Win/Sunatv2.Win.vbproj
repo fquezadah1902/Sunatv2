@@ -134,11 +134,17 @@
     <Compile Include="Principal\ControlFondo.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Principal\FrmPrincipal.designer.vb">
-      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+    <Compile Include="Principal\MDI.designer.vb">
+      <DependentUpon>MDI.vb</DependentUpon>
     </Compile>
-    <Compile Include="Principal\FrmPrincipal.vb">
+    <Compile Include="Principal\MDI.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\ControlConsultasSunat.designer.vb">
+      <DependentUpon>ControlConsultasSunat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\ControlConsultasSunat.vb">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -154,8 +160,11 @@
     <EmbeddedResource Include="Principal\ControlFondo.resx">
       <DependentUpon>ControlFondo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Principal\FrmPrincipal.resx">
-      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+    <EmbeddedResource Include="Principal\MDI.resx">
+      <DependentUpon>MDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\ControlConsultasSunat.resx">
+      <DependentUpon>ControlConsultasSunat.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -194,7 +203,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Procesos\" />
     <Folder Include="Seguridad\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

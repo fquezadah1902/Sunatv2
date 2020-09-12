@@ -29,7 +29,7 @@ Partial Class ControlFondo
         'PictureBox1
         '
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.Image = Global.Sistema.Gestion.Ventas.WinApp.My.Resources.Resources.Logo_3
+        'Me.PictureBox1.Image = Global.Sistema.Gestion.Ventas.WinApp.My.Resources.Resources.Logo_3
         Me.PictureBox1.Location = New System.Drawing.Point(23, 378)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(291, 88)
