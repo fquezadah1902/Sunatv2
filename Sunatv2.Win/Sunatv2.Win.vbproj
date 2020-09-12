@@ -128,6 +128,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Principal\ControlFondo.designer.vb">
+      <DependentUpon>ControlFondo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\ControlFondo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Principal\FrmPrincipal.designer.vb">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\FrmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -138,6 +150,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\ControlFondo.resx">
+      <DependentUpon>ControlFondo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -174,6 +192,10 @@
       <Project>{a58ea8f1-f782-4853-8402-e69ea4e588f5}</Project>
       <Name>Sunatv2.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Procesos\" />
+    <Folder Include="Seguridad\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -82,11 +82,11 @@ Partial Class Form1
         Me.IdUsuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.KryptonHeaderGroup1 = New ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup()
         Me.ButtonSpecHeaderGroup10 = New ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup()
+        Me.KryptonButton1 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.cmbDistrito = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
         Me.cmbProvincia = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
         Me.cmbDepartamento = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
         Me.btnTeclado = New ComponentFactory.Krypton.Toolkit.KryptonButton()
-        Me.KryptonButton1 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         CType(Me.kryptonPanelMain, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.kryptonPanelMain.SuspendLayout()
         CType(Me.kryptonSplitContainerMain, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -125,7 +125,7 @@ Partial Class Form1
         Me.kryptonPanelMain.Location = New System.Drawing.Point(0, 0)
         Me.kryptonPanelMain.Name = "kryptonPanelMain"
         Me.kryptonPanelMain.Padding = New System.Windows.Forms.Padding(4)
-        Me.kryptonPanelMain.Size = New System.Drawing.Size(800, 450)
+        Me.kryptonPanelMain.Size = New System.Drawing.Size(842, 450)
         Me.kryptonPanelMain.TabIndex = 102
         '
         'kryptonSplitContainerMain
@@ -144,8 +144,8 @@ Partial Class Form1
         'kryptonSplitContainerMain.Panel2
         '
         Me.kryptonSplitContainerMain.Panel2.Controls.Add(Me.kryptonSplitContainerDetails)
-        Me.kryptonSplitContainerMain.Size = New System.Drawing.Size(792, 442)
-        Me.kryptonSplitContainerMain.SplitterDistance = 264
+        Me.kryptonSplitContainerMain.Size = New System.Drawing.Size(834, 442)
+        Me.kryptonSplitContainerMain.SplitterDistance = 278
         Me.kryptonSplitContainerMain.TabIndex = 0
         '
         'KryptonHeaderGroup7
@@ -173,7 +173,7 @@ Partial Class Form1
         'kryptonSplitContainerDetails.Panel2
         '
         Me.kryptonSplitContainerDetails.Panel2.Controls.Add(Me.KryptonHeaderGroup1)
-        Me.kryptonSplitContainerDetails.Size = New System.Drawing.Size(792, 442)
+        Me.kryptonSplitContainerDetails.Size = New System.Drawing.Size(834, 442)
         Me.kryptonSplitContainerDetails.SplitterDistance = 147
         Me.kryptonSplitContainerDetails.TabIndex = 0
         '
@@ -503,7 +503,7 @@ Partial Class Form1
         Me.KryptonHeaderGroup1.Panel.Controls.Add(Me.cmbProvincia)
         Me.KryptonHeaderGroup1.Panel.Controls.Add(Me.cmbDepartamento)
         Me.KryptonHeaderGroup1.Panel.Controls.Add(Me.btnTeclado)
-        Me.KryptonHeaderGroup1.Size = New System.Drawing.Size(792, 442)
+        Me.KryptonHeaderGroup1.Size = New System.Drawing.Size(834, 442)
         Me.KryptonHeaderGroup1.StateNormal.HeaderPrimary.Content.Image.ImageH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far
         Me.KryptonHeaderGroup1.TabIndex = 1
         Me.KryptonHeaderGroup1.ValuesPrimary.Heading = "Consultas"
@@ -512,6 +512,14 @@ Partial Class Form1
         'ButtonSpecHeaderGroup10
         '
         Me.ButtonSpecHeaderGroup10.UniqueName = "F7D03F7D2C87431846AF1A590A742936"
+        '
+        'KryptonButton1
+        '
+        Me.KryptonButton1.Location = New System.Drawing.Point(555, 51)
+        Me.KryptonButton1.Name = "KryptonButton1"
+        Me.KryptonButton1.Size = New System.Drawing.Size(111, 25)
+        Me.KryptonButton1.TabIndex = 100
+        Me.KryptonButton1.Values.Text = "&Consultar"
         '
         'cmbDistrito
         '
@@ -549,7 +557,7 @@ Partial Class Form1
         'btnTeclado
         '
         Me.btnTeclado.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnTeclado.Location = New System.Drawing.Point(1136, 26)
+        Me.btnTeclado.Location = New System.Drawing.Point(1178, 26)
         Me.btnTeclado.Name = "btnTeclado"
         Me.btnTeclado.Size = New System.Drawing.Size(159, 42)
         Me.btnTeclado.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center
@@ -557,19 +565,11 @@ Partial Class Form1
         Me.btnTeclado.TabIndex = 96
         Me.btnTeclado.Values.Text = ""
         '
-        'KryptonButton1
-        '
-        Me.KryptonButton1.Location = New System.Drawing.Point(555, 51)
-        Me.KryptonButton1.Name = "KryptonButton1"
-        Me.KryptonButton1.Size = New System.Drawing.Size(111, 25)
-        Me.KryptonButton1.TabIndex = 100
-        Me.KryptonButton1.Values.Text = "&Consultar"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(842, 450)
         Me.Controls.Add(Me.kryptonPanelMain)
         Me.Name = "Form1"
         Me.Text = "Form1"
